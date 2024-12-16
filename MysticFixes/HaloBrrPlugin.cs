@@ -10,6 +10,11 @@ using BepInEx.Configuration;
 using HunkMod;
 using UnityEngine;
 using HunkMod.Modules.Weapons;
+using MonoMod.Cil;
+using Mono.Cecil.Cil;
+using MonoMod.Utils;
+using UnityEngine.UIElements;
+using System.Reflection;
 
 [module: UnverifiableCode]
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -26,13 +31,13 @@ namespace HaloBrr
         public const string PluginName = "HaloBrrr";
         public const string PluginVersion = "0.0.1";
 
+        public static PluginInfo PInfo;
+
         public void Awake()
         {
-            // dont care
-            // also didnt ask
-            var assetBundle = new AssetBundle();
+            Asset.Init();
 
-            SMG.instance.weaponDef.modelPrefab = assetBundle.LoadAsset<GameObject>("HaloSmg");
+            SMG.instance.weaponDef.modelPrefab = Asset.mainBundle.LoadAsset<GameObject>("mdlSMG");
         }
     }
 }

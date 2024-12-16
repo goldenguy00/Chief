@@ -27,7 +27,7 @@
 	
 	<ItemGroup>
 	  <Reference Include="HunkMod">
-	    <HintPath>..\..\..\..\..\AppData\Roaming\com.kesomannen.gale\riskofrain2\profiles\Good1\BepInEx\plugins\rob_gaming-HUNK\HunkMod.dll</HintPath>
+	    <HintPath>..\..\..\SharedRef\HunkMod.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 
