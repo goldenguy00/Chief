@@ -15,29 +15,41 @@ using Mono.Cecil.Cil;
 using MonoMod.Utils;
 using UnityEngine.UIElements;
 using System.Reflection;
-
-[module: UnverifiableCode]
-#pragma warning disable CS0618 // Type or member is obsolete
-[assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
-#pragma warning restore CS0618 // Type or member is obsolete
+using HunkMod.Modules.Survivors;
+using HunkMod.Modules;
+using HunkMod.Modules.Components;
+using System.Collections.Generic;
 
 namespace HaloBrr
 {
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     public class HaloBrrPlugin : BaseUnityPlugin
     {
-        public const string PluginGUID = "com." + PluginAuthor + "." + PluginName;
+        public const string PluginGUID = "_" + PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "score";
         public const string PluginName = "HaloBrrr";
         public const string PluginVersion = "0.0.1";
 
-        public static PluginInfo PInfo;
+        public static HaloBrrPlugin Instance { get; private set; }
+        internal static Harmony Harm;
 
         public void Awake()
         {
-            Asset.Init();
+            Instance = this;
+            Harm = new Harmony(PluginGUID);
 
-            SMG.instance.weaponDef.modelPrefab = Asset.mainBundle.LoadAsset<GameObject>("mdlSMG");
+            Log.Init(Logger);
+
+            AddWeaponReskins();
+        }
+
+        private void AddWeaponReskins()
+        {
+            WeaponManager.Init();
+
+            WeaponManager.AddWeapon<SMG>("mdlSMGHalo");
+
+            WeaponManager.FinishPatch();
         }
     }
 }
