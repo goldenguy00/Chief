@@ -1,0 +1,48 @@
+{
+    "name": "RoR2.Editor.ThunderKit",
+    "rootNamespace": "RoR2.Editor",
+    "references": [
+        "GUID:60983344ee8157d4ab97c25513f789c4",
+        "GUID:280569ac301428d4d950fdf647900922",
+        "GUID:48abf88f565f4bb4fb35fbe2385f0894",
+        "GUID:b04f7ec21bb6ebe43a85599e36f30cff",
+        "GUID:7b6797d0f5adde64d8f71e4e56cbe2a1",
+        "GUID:c5ecc461727906345a35491a0440694f",
+        "GUID:fb8ce2e2486231249a0954d5da518927"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "RoR2.dll",
+        "BepInEx.dll",
+        "HGCSharpUtils.dll",
+        "HGUnityUtils.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "R2EK_THUNDERKIT",
+        "R2EK_ROR2_IMPORTED"
+    ],
+    "versionDefines": [
+        {
+            "name": "com.passivepicasso.thunderkit",
+            "expression": "9.0.0",
+            "define": "R2EK_THUNDERKIT"
+        },
+        {
+            "name": "com.unity.scriptablebuildpipeline",
+            "expression": "1.2.0",
+            "define": "R2EK_SCRIPTABLEBUILDPIPELINE"
+        },
+        {
+            "name": "riskofrain2",
+            "expression": "1.3.0",
+            "define": "R2EK_ROR2_IMPORTED"
+        }
+    ],
+    "noEngineReferences": false
+}
