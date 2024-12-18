@@ -11,7 +11,7 @@ using HunkMod.Modules.Weapons;
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 #pragma warning restore CS0618 // Type or member is obsolete
 
-namespace HaloBrr
+namespace HunkHalo
 {
     internal static class Log
     {

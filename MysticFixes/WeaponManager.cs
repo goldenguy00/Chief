@@ -8,7 +8,7 @@ using HarmonyLib;
 using HunkMod.Modules.Weapons;
 using UnityEngine;
 
-namespace HaloBrr
+namespace HunkHalo
 {
     /// <summary>
     /// trying to comprehend this class is a health risk, don't do it
@@ -20,7 +20,7 @@ namespace HaloBrr
 
         internal static void Init()
         {
-            var bundleFiles = Directory.EnumerateFiles(Path.GetDirectoryName(HaloBrrPlugin.Instance.Info.Location), "*", SearchOption.AllDirectories).Where(p => !Path.HasExtension(p));
+            var bundleFiles = Directory.EnumerateFiles(Path.GetDirectoryName(HunkHaloPlugin.Instance.Info.Location), "*", SearchOption.AllDirectories).Where(p => !Path.HasExtension(p));
 
             foreach (var bundleName in bundleFiles)
             {
@@ -48,13 +48,10 @@ namespace HaloBrr
 
         public static void FinishPatch()
         {
-            if (HunkMod.MainPlugin.MODVERSION == "2.4.4")
-                HaloBrrPlugin.Harm.CreateClassProcessor(typeof(Fix)).Patch();
-
             if (prefabNamesByType.Any())
             {
-                HaloBrrPlugin.Harm.CreateClassProcessor(typeof(ReplacePrefab)).Patch();
-                HaloBrrPlugin.Harm.CreateClassProcessor(typeof(ReplacePickup)).Patch();
+                HunkHaloPlugin.Harm.CreateClassProcessor(typeof(ReplacePrefab)).Patch();
+                HunkHaloPlugin.Harm.CreateClassProcessor(typeof(ReplacePickup)).Patch();
             }
             else
                 Log.Error("No replacements found, did you forget to add it?");
