@@ -19,6 +19,8 @@ using HunkMod.Modules.Survivors;
 using HunkMod.Modules;
 using HunkMod.Modules.Components;
 using System.Collections.Generic;
+using Chief;
+using System.Linq;
 
 namespace HunkHalo
 {

@@ -26,6 +26,9 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+	  <Reference Include="Chief">
+	    <HintPath>..\..\..\SharedRef\Chief.dll</HintPath>
+	  </Reference>
 	  <Reference Include="HunkMod">
 	    <HintPath>..\..\..\SharedRef\HunkMod.dll</HintPath>
 	  </Reference>
