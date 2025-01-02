@@ -42,7 +42,13 @@ namespace HunkHalo
 
             Log.Init(Logger);
 
+            ApplySoundReplacements();
             AddWeaponReskins();
+        }
+
+        private void ApplySoundReplacements()
+        {
+            Harm.CreateClassProcessor(typeof(EscapeSequence)).Patch();
         }
 
         private void AddWeaponReskins()
