@@ -10,6 +10,7 @@ set Zip=%Release%Release.zip
 
 copy /Y %TargetPath%.dll %CopyPath%.dll
 copy /Y %TargetPath%.pdb %CopyPath%.pdb
+copy /Y %Release%README.md %SolutionDir%README.md
 
 if exist %Zip% (Del %Zip%)
 

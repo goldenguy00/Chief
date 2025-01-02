@@ -10,7 +10,7 @@ namespace ChiefMod
         public const string PluginGUID = "com." + PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "LONK";
         public const string PluginName = "Chief";
-        public const string PluginVersion = "1.0.3";
+        public const string PluginVersion = "1.0.4";
 
         public static ChiefPlugin Instance { get; private set; }
         internal static Harmony Harm;
