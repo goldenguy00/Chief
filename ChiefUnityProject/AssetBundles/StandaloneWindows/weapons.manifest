@@ -1,0 +1,42 @@
+ManifestFileVersion: 0
+CRC: 2375681576
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: f00348aaef1796f50b156577801d4c2f
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 533067e4812aea021709a65abdf35592
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 67079b849227b734694872d8810229b8, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 120
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: ChildLocator/NameTransformPair
+Assets:
+- Assets/Chief/Weapons/mdlSMGHaloPickup.prefab
+- Assets/Chief/Weapons/mdlSMGHalo.prefab
+- Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
+- Assets/Chief/Weapons/mdlMUPHalo.prefab
+Dependencies: []
