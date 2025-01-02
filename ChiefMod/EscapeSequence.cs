@@ -37,6 +37,6 @@ namespace ChiefMod
             // true = run original method after
             // false = do not run original method
             return false;
-        }
+        }//
     }
 }
