@@ -15,7 +15,7 @@ C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57748
+57861
 Successfully changed project path to: C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
 C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [28980] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 2649654173 [EditorId] 2649654173 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [25088] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 2447016206 [EditorId] 2447016206 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [28980] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 2649654173 [EditorId] 2649654173 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [25088] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 2447016206 [EditorId] 2447016206 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 94.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 92.38 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -68,76 +68,76 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56140
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56880
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005810 seconds.
+Registered in 0.006677 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 90.55 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 91.97 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.727 seconds
+- Completed reload, in  0.750 seconds
 Domain Reload Profiling:
-	ReloadAssembly (728ms)
-		BeginReloadAssembly (104ms)
+	ReloadAssembly (750ms)
+		BeginReloadAssembly (110ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (518ms)
-			LoadAssemblies (102ms)
+		EndReloadAssembly (522ms)
+			LoadAssemblies (107ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (113ms)
+			SetupTypeCache (118ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (30ms)
 			SetupLoadedEditorAssemblies (328ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (9ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (91ms)
+				RefreshPlugins (92ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (175ms)
-				ProcessInitializeOnLoadMethodAttributes (53ms)
+				ProcessInitializeOnLoadAttributes (172ms)
+				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006975 seconds.
+Registered in 0.007221 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.73 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.68 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.662 seconds
+- Completed reload, in  1.677 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1663ms)
-		BeginReloadAssembly (142ms)
+	ReloadAssembly (1678ms)
+		BeginReloadAssembly (155ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (1398ms)
-			LoadAssemblies (106ms)
+			CreateAndSetChildDomain (22ms)
+		EndReloadAssembly (1395ms)
+			LoadAssemblies (115ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (304ms)
+			SetupTypeCache (310ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (55ms)
-			SetupLoadedEditorAssemblies (912ms)
+			RebuildScriptCaches (59ms)
+			SetupLoadedEditorAssemblies (902ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (96ms)
-				ProcessInitializeOnLoadAttributes (772ms)
-				ProcessInitializeOnLoadMethodAttributes (26ms)
+				BeforeProcessingInitializeOnLoad (99ms)
+				ProcessInitializeOnLoadAttributes (760ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -151,7 +151,7 @@ Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3574 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 25 unused Assets / (20.4 KB). Loaded Objects now: 4052.
 Memory consumption went from 138.5 MB to 138.4 MB.
-Total: 11.781700 ms (FindLiveObjects: 0.316600 ms CreateObjectMapping: 0.087100 ms MarkObjects: 11.332800 ms  DeleteObjects: 0.044000 ms)
+Total: 11.794100 ms (FindLiveObjects: 0.319400 ms CreateObjectMapping: 0.086700 ms MarkObjects: 11.342100 ms  DeleteObjects: 0.044200 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,486 +167,101 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 63070.798206 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72d45fa8cc0f15862f809a0bcd815cc1') in 0.175898 seconds 
-Number of asset objects unloaded after import = 105
-========================================================================
-Received Import Request.
-  Time since last request: 6.365155 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '713205edc2e416a2f9070ca0eeb8fb74') in 0.031757 seconds 
-Number of asset objects unloaded after import = 105
-========================================================================
-Received Import Request.
-  Time since last request: 3.720350 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b21444f2c55328d2eb8b3c80af4b8ce') in 0.030809 seconds 
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 65.854152 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8728c49304b5f4eb8fbd62a0fe2a15e8') in 0.060380 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 33.253687 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c7c1bcc8930f985be28899b7158791d') in 0.046328 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 2.990661 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2be5cea8f4d98d7a58164c49a5cc913') in 0.048208 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 1.792912 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf365a7eafdb2ac007746fe9868ff07') in 0.043538 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 1.993418 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ea0e8b5bc9587ea37f0f24be3737865') in 0.039897 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 41.746697 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30afd353f0a085707e247599670287bd') in 0.041071 seconds 
-Number of asset objects unloaded after import = 272
-========================================================================
-Received Import Request.
-  Time since last request: 39.707665 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f602536bb51cab06eab14abaf658bc') in 0.041167 seconds 
-Number of asset objects unloaded after import = 406
-========================================================================
-Received Import Request.
-  Time since last request: 8.026900 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '632b06195dd1909ee91f8a0399976447') in 0.040805 seconds 
-Number of asset objects unloaded after import = 406
-========================================================================
-Received Import Request.
-  Time since last request: 4.822438 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70e37987d8fe4bc27cae4d30147c24b0') in 0.041706 seconds 
-Number of asset objects unloaded after import = 406
-========================================================================
-Received Import Request.
-  Time since last request: 10.034904 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '780a69c56eb5875705d97686bff2bfb7') in 0.042482 seconds 
-Number of asset objects unloaded after import = 406
-========================================================================
-Received Import Request.
-  Time since last request: 10.800243 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd02273905ed1a872c93c28e3e00be37d') in 0.041860 seconds 
-Number of asset objects unloaded after import = 406
-========================================================================
-Received Import Request.
-  Time since last request: 4.289523 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1712fa13c40c1e19de22e463e2026d21') in 0.032560 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 56.474095 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7267cf86a9b96c57c28250735247cf2') in 0.026239 seconds 
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 1.782878 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c99c59504d600e38630f6226b194c082') in 0.029354 seconds 
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 3.009864 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd393aa520b8cd3d66bdf22204d696f18') in 0.023347 seconds 
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 87.370019 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '699f7cce3390b37d70b096dc9c9b888f') in 0.031011 seconds 
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 1.780032 seconds.
-  path: Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
-  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b96bd3a4470429f7640edbf9986e152') in 0.027398 seconds 
-Number of asset objects unloaded after import = 37
-========================================================================
-Received Import Request.
-  Time since last request: 18.292538 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a2e96dbae21733808284837d9e57199') in 0.052052 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 2.378488 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe2fc9865567aef838bc34bec1fa1e39') in 0.043624 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 2.175220 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb602ab11fa27d1ea463fcf9f1974d22') in 0.039676 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Import Request.
-  Time since last request: 8.113202 seconds.
+  Time since last request: 64905.683491 seconds.
   path: Assets/Chief/Weapons/mdlSMGHalo.prefab
   artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7d7d87701d40623890e858f30584b4') in 0.030690 seconds 
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 5.408481 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
-  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e4cc79c71fa52d033fc6733474210ac') in 0.027162 seconds 
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 2.004790 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
-  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb16ca7f301b44e0b6fe579d51908299') in 0.026961 seconds 
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 48.831399 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
-  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eae850192d22a914b8ee0b2acea54623') in 0.023214 seconds 
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 3.004040 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
-  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d81ecccb3e94b89d29ca7148b6735e') in 0.031919 seconds 
-Number of asset objects unloaded after import = 61
-========================================================================
-Received Import Request.
-  Time since last request: 24.702805 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
-  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e5027ec1cb4760c4b235fbb10b6195') in 0.023018 seconds 
+Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7caaf5efb2929e39684a82ad8f684401') in 0.157684 seconds 
 Number of asset objects unloaded after import = 57
 ========================================================================
 Received Import Request.
-  Time since last request: 16.719650 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHaloPickup.prefab
-  artifactKey: Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHaloPickup.prefab using Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e83197cd486f2e7fa8bc3bfb689918') in 0.030770 seconds 
-Number of asset objects unloaded after import = 58
-========================================================================
-Received Import Request.
-  Time since last request: 7.563041 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
-  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a56b9c5e1a718b8c8e19126fbf3e32d') in 0.026205 seconds 
-Number of asset objects unloaded after import = 57
-========================================================================
-Received Import Request.
-  Time since last request: 18.695734 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHaloPickup.prefab
-  artifactKey: Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHaloPickup.prefab using Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b8c7ea7dd8c473d7a01ea21d7b750003') in 0.023248 seconds 
-Number of asset objects unloaded after import = 58
-========================================================================
-Received Import Request.
-  Time since last request: 12.088233 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHaloPickup.prefab
-  artifactKey: Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHaloPickup.prefab using Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '403512e7f3305b5745779681b0cb85ca') in 0.024294 seconds 
-Number of asset objects unloaded after import = 58
-========================================================================
-Received Import Request.
-  Time since last request: 9.354148 seconds.
+  Time since last request: 14.729947 seconds.
   path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
   artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46482d43d5cf9241bbd47dd157d4400d') in 0.035875 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 1.985389 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aefc2250acedc8bf97d0efbe2e8f5347') in 0.033198 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 2.594972 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '610fb959f3f76e78cff726619e50498c') in 0.038973 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 1.991383 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ac436c3fc1f83ef5b2015191dfdf903') in 0.041735 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 13.558947 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '033e771a41505fe24be8b0ec647a857d') in 0.037816 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 10.836655 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a5f0e581aa49e2d06af1d52f6303df1') in 0.033720 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 4.833387 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15ecb69d3d326f302b6ca21fe3976729') in 0.035762 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 4.217540 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb93662b78f05b6c5734df705ff5c246') in 0.039223 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 3.216244 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ada2a52c46818c6074abc92091aa9c10') in 0.036557 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 1.580750 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d1419ef54e4532b7f5a9bf2c295532c') in 0.040176 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 13.156222 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46dd3998eea55d2b8453a6340be016ce') in 0.039760 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 13.153442 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c6227f42f1c1e4ba12dc93c58bb4a1f') in 0.045082 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 7.261121 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ce5b523502bf03ea900ae205b51b87') in 0.040738 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 2.377729 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'daf2282261a085b891b4fe309c9855e8') in 0.039398 seconds 
-Number of asset objects unloaded after import = 273
-========================================================================
-Received Import Request.
-  Time since last request: 19.292197 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fdfedbe66f3138ab334e91279cdb1c5') in 0.005059 seconds 
-Number of asset objects unloaded after import = 5
-========================================================================
-Received Import Request.
-  Time since last request: 2.744494 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c4527a389abc6e10b4da5d9b7af5ca9') in 0.044961 seconds 
+Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e040f3dabf5b6ed69101390655b175') in 0.065391 seconds 
 Number of asset objects unloaded after import = 281
 ========================================================================
 Received Import Request.
-  Time since last request: 5.045566 seconds.
+  Time since last request: 7.822673 seconds.
   path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
   artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac968dd9d8ac3b18b862ee287e748c26') in 0.041414 seconds 
+Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a6345feea5794a109f4ea6bbe1006f4') in 0.052498 seconds 
 Number of asset objects unloaded after import = 281
 ========================================================================
 Received Import Request.
-  Time since last request: 42.985630 seconds.
+  Time since last request: 5.426328 seconds.
   path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
   artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b9021f4c72445ab0cf163b4ff335c47') in 0.046784 seconds 
+Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50f7a866146220c9e2441e0c8478f733') in 0.045427 seconds 
 Number of asset objects unloaded after import = 281
 ========================================================================
 Received Import Request.
-  Time since last request: 137.841915 seconds.
+  Time since last request: 2.570239 seconds.
   path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
   artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41d5d0d9468f843ef8a923e97f4e41b9') in 0.044263 seconds 
+Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '843949c0b2d89b381c1613949db40c23') in 0.041903 seconds 
 Number of asset objects unloaded after import = 281
 ========================================================================
 Received Import Request.
-  Time since last request: 8.646612 seconds.
+  Time since last request: 2.675276 seconds.
   path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
   artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71837d19343a6dc8aa1dc9d478148b8e') in 0.039081 seconds 
+Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10d48a4822456f8687a410eeb65188c9') in 0.041192 seconds 
 Number of asset objects unloaded after import = 281
 ========================================================================
 Received Import Request.
-  Time since last request: 20.813615 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 48.685704 seconds.
+  path: Assets/Hunk/Weapons/Materials
+  artifactKey: Guid(647cb9ea97c9c73488f502a954ef8ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c48c9bb9a678e12ff0d6e08d78d63c12') in 0.038498 seconds 
-Number of asset objects unloaded after import = 281
+Start importing Assets/Hunk/Weapons/Materials using Guid(647cb9ea97c9c73488f502a954ef8ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '657b3008e2d67f5d9de78949dd4361b7') in 0.010035 seconds 
+Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 169.712406 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
-  artifactKey: Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.215532 seconds.
+  path: Assets/Hunk/Weapons/Materials/03___Default_1001_albedo.mat
+  artifactKey: Guid(64ae6003a494fee4cbb20d7eb68d48ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHaloPickup.prefab using Guid(633ce347946667d4788996dae7a74744) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ead8bb2e418f32f67418d5dc1444fc8c') in 0.046638 seconds 
-Number of asset objects unloaded after import = 281
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.33 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 20 unused Assets / (22.8 KB). Loaded Objects now: 4061.
-Memory consumption went from 71.7 MB to 71.7 MB.
-Total: 12.527300 ms (FindLiveObjects: 0.410900 ms CreateObjectMapping: 0.138800 ms MarkObjects: 11.938200 ms  DeleteObjects: 0.038200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Start importing Assets/Hunk/Weapons/Materials/03___Default_1001_albedo.mat using Guid(64ae6003a494fee4cbb20d7eb68d48ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cc229ec8743466b944da2ba01a1dec9') in 0.055841 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 66.567324 seconds.
-  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
-  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000035 seconds.
+  path: Assets/Hunk/Weapons/Materials/Leon_LightningHawkSight_D.mat
+  artifactKey: Guid(4da9950d4c276e741945af6aa4412c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd0b83b28d106c35731e9fce2eb7a399') in 0.047939 seconds 
-Number of asset objects unloaded after import = 281
+Start importing Assets/Hunk/Weapons/Materials/Leon_LightningHawkSight_D.mat using Guid(4da9950d4c276e741945af6aa4412c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd85433f57335907c88bb0c45f7f8aefc') in 0.027999 seconds 
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
-  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000027 seconds.
+  path: Assets/Hunk/Weapons/Materials/SMG_Exploded_SMG_Body_Mat_BaseColor.mat
+  artifactKey: Guid(97c83441272514044b85cae2d2767f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8c3f64dec668c90159c90ce36973ef0') in 0.036546 seconds 
-Number of asset objects unloaded after import = 57
+Start importing Assets/Hunk/Weapons/Materials/SMG_Exploded_SMG_Body_Mat_BaseColor.mat using Guid(97c83441272514044b85cae2d2767f22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b3ef396afb03ad1e3382140a1ed7c89') in 0.033232 seconds 
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Chief/Weapons/mdlSMGHaloPickup.prefab
-  artifactKey: Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 0.000020 seconds.
+  path: Assets/Hunk/Weapons/Materials/SMG_Exploded_SMG_Scope_Mat_BaseColor.mat
+  artifactKey: Guid(9e40c4c421035aa40a5a75e2000be32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Chief/Weapons/mdlSMGHaloPickup.prefab using Guid(e308eb453d6df484da8919a1401a0ef4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef7eb09803a1c706468d7e2272737f7') in 0.028455 seconds 
-Number of asset objects unloaded after import = 58
+Start importing Assets/Hunk/Weapons/Materials/SMG_Exploded_SMG_Scope_Mat_BaseColor.mat using Guid(9e40c4c421035aa40a5a75e2000be32d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '604dfeca6aca69b79ebb11f391d6f7be') in 0.029243 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Hunk/Weapons/Materials/Leon_VP70Custom_S.mat
+  artifactKey: Guid(6eef6282a98b183409cef740fdbfc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Hunk/Weapons/Materials/Leon_VP70Custom_S.mat using Guid(6eef6282a98b183409cef740fdbfc606) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfe5c12eeca350ffff617301fa32d14a') in 0.031926 seconds 
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0
