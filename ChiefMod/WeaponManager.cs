@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using HarmonyLib;
+using HunkMod.Modules;
 using HunkMod.Modules.Weapons;
 using UnityEngine;
 
@@ -50,6 +51,7 @@ namespace ChiefMod
         {
             if (prefabNamesByType.Any())
             {
+                ChiefPlugin.Harm.CreateClassProcessor(typeof(BetterMaterialReplacement)).Patch();
                 ChiefPlugin.Harm.CreateClassProcessor(typeof(ReplacePrefab)).Patch();
                 ChiefPlugin.Harm.CreateClassProcessor(typeof(ReplacePickup)).Patch();
             }
@@ -72,7 +74,8 @@ namespace ChiefMod
 
             if (modelPrefabsByName.TryGetValue(modelName, out var modelPrefab) && modelPrefab != null)
             {
-                //Log.Warning($"Successfully replaced {propertyInfo.DeclaringType.Name} with new model {modelPrefab.name}");
+                if (isPickup)
+                    BetterMaterialReplacement.ConvertAllRenderersToHopooShader(ref modelPrefab, ref isPickup);
                 return modelPrefab;
             }
 
@@ -80,6 +83,49 @@ namespace ChiefMod
             return null;
         }
 
+
+    }
+
+    [HarmonyPatch]
+    public class BetterMaterialReplacement
+    {
+        [HarmonyPatch(typeof(HunkAssets), nameof(HunkAssets.ConvertAllRenderersToHopooShader), [typeof(GameObject), typeof(bool)])]
+        [HarmonyPrefix]
+        public static void ConvertAllRenderersToHopooShader(ref GameObject objectToConvert, ref bool onlyMeshes)
+        {
+            Renderer[] componentsInChildren = objectToConvert.GetComponentsInChildren<Renderer>();
+            foreach (Renderer renderer in componentsInChildren)
+            {
+                if (!renderer || !renderer.material)
+                {
+                    continue;
+                }
+
+                if (onlyMeshes)
+                {
+                    if (!renderer.GetComponent<LineRenderer>() && !renderer.GetComponent<TrailRenderer>() && !renderer.GetComponent<ParticleSystemRenderer>())
+                    {
+                        ConvertAllRenderersToHopooShader(renderer);
+                    }
+                }
+                else
+                {
+                    ConvertAllRenderersToHopooShader(renderer);
+                }
+            }
+        }
+
+        public static void ConvertAllRenderersToHopooShader(Renderer renderer)
+        {
+            Material[] materials = renderer.materials;
+            foreach (Material material in materials)
+            {
+                if ((bool)material)
+                {
+                    HunkAssets.ConvertMaterial(material);
+                }
+            }
+        }
     }
 
     [HarmonyPatch]

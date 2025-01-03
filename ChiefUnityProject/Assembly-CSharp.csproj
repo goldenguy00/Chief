@@ -74,6 +74,7 @@
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Built-In\Community ForceShield\ForceShieldImpactDetection.cs" />
     <Compile Include="Assets\AmplifyShaderEditor\Examples\Built-In\Community ForceShield\ForceShieldShootBall.cs" />
     <Compile Include="Assets\Scripts\FootstepHandler.cs" />
+    <Compile Include="Assets\MeshCombiner\Scripts\MeshCombiner.cs" />
     <Compile Include="Assets\Scripts\ResetFootsteps.cs" />
     <Compile Include="Assets\Scripts\RagdollController.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />

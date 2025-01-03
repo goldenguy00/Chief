@@ -303,6 +303,7 @@
 "Assets/AmplifyShaderEditor/Examples/Built-In/Community ForceShield/ForceShieldImpactDetection.cs"
 "Assets/AmplifyShaderEditor/Examples/Built-In/Community ForceShield/ForceShieldShootBall.cs"
 "Assets/AmplifyShaderEditor/Examples/Built-In/Community HighlightAnimated/highlightAnimated.cs"
+"Assets/MeshCombiner/Scripts/MeshCombiner.cs"
 "Assets/Scripts/CharacterSelectSurvivorPreviewDisplayController.cs"
 "Assets/Scripts/ChildLocator.cs"
 "Assets/Scripts/DestroyOnTimer.cs"

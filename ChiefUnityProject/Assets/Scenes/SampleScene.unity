@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &15347003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 15347004}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &15347004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15347003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.03240347, y: 2.2062507, z: 0.48725846}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &22740960
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -177,6 +208,10 @@ PrefabInstance:
     - target: {fileID: 4322312538963726586, guid: 7b88ddf90235cd84fbb271c5b91b4eef, type: 3}
       propertyPath: m_Name
       value: mdlShotgunHalo
+      objectReference: {fileID: 0}
+    - target: {fileID: 4322312538963726586, guid: 7b88ddf90235cd84fbb271c5b91b4eef, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b88ddf90235cd84fbb271c5b91b4eef, type: 3}
@@ -522,7 +557,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1222070606479296849, guid: ef5c47c0f1332bd41b1250b9466e84ac, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1222070606479296850, guid: ef5c47c0f1332bd41b1250b9466e84ac, type: 3}
       propertyPath: m_RootOrder
@@ -659,7 +694,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.06305605, y: -0.7613095, z: 0.07489641, w: 0.6409543}
-  m_LocalPosition: {x: 3.055, y: 4.119, z: 1.373}
+  m_LocalPosition: {x: 4.646, y: 4.125, z: 1.648}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -728,7 +763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2097745727066803670, guid: de43f48f363bcb44d97c3249b9a0d207, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de43f48f363bcb44d97c3249b9a0d207, type: 3}
