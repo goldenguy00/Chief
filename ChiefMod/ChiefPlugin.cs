@@ -9,7 +9,7 @@ namespace ChiefMod
     {
         public const string PluginGUID = "com." + PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "LONK";
-        public const string PluginName = "Chief";
+        public const string PluginName = "ChiefMod";
         public const string PluginVersion = "1.0.4";
 
         public static ChiefPlugin Instance { get; private set; }
@@ -37,7 +37,7 @@ namespace ChiefMod
 
             WeaponManager.AddWeapon<SMG>("mdlSMGHalo");
             WeaponManager.AddWeapon<MUP>("mdlMUPHalo");
-            WeaponManager.AddWeapon<AssaultRifle>("mdlAssaultRifle Variant");
+            WeaponManager.AddWeapon<AssaultRifle>("mdlAssaultRifleUNSC");
 
             WeaponManager.FinishPatch();
         }

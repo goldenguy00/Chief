@@ -108,15 +108,15 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222070606479296849}
-  m_LocalRotation: {x: 0.6310464, y: -0.036070064, z: -0.06547485, w: 0.77213496}
-  m_LocalPosition: {x: 0.664, y: 3.046, z: -1.313}
-  m_LocalScale: {x: 0.025322242, y: 0.025322262, z: 0.025322253}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6704285908862290698}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 104.121, y: 145.457, z: 143.056}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2139563714628064730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +139,7 @@ MonoBehaviour:
   - name: ExtendedMag
     transform: {fileID: 6039150588507057449}
   - name: Moderator
-    transform: {fileID: 6662269014318031682}
+    transform: {fileID: 8901773616131221030}
 --- !u!1 &1922854788666011063
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,7 +234,7 @@ GameObject:
   - component: {fileID: 2139563714406791977}
   - component: {fileID: 2139563714406791976}
   m_Layer: 0
-  m_Name: Laser
+  m_Name: LaserOld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -478,7 +478,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6704285908862290698}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -87.759, y: -245.817, z: 605.311}
 --- !u!33 &1288224762922986138
 MeshFilter:
@@ -670,89 +670,6 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!1 &6953595668740113292
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6662269014318031682}
-  - component: {fileID: 6443664460088107441}
-  - component: {fileID: 7804919321244689240}
-  m_Layer: 0
-  m_Name: 24_-Upgrades|Barrel.extensionr_0.3_0_0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!4 &6662269014318031682
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6953595668740113292}
-  m_LocalRotation: {x: 0.7126853, y: -0.009467872, z: 0.015711928, w: -0.7012442}
-  m_LocalPosition: {x: 0.02, y: 0.69, z: -11.43}
-  m_LocalScale: {x: 20911.014, y: 20911.025, z: 20911.023}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 6704285908862290698}
-  m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: -87.759, y: -245.817, z: 605.311}
---- !u!33 &6443664460088107441
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6953595668740113292}
-  m_Mesh: {fileID: 2077939571771757777, guid: b524372b84bf63e468e3505431fcc033, type: 3}
---- !u!23 &7804919321244689240
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6953595668740113292}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 9ecb7bfd5791269479e973189ac229e6, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &7054897612080073954
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +703,6 @@ Transform:
   - {fileID: 4972276016312272464}
   - {fileID: 4013523073739128426}
   - {fileID: 7627743955007395659}
-  - {fileID: 6662269014318031682}
   - {fileID: 8901773616131221030}
   m_Father: {fileID: 1222070606479296850}
   m_RootOrder: 0

@@ -415,8 +415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   transformPairs:
   - name: Magazine
-    transform: {fileID: 3427690531772438836, guid: edbb553c452813b4dbc885c81efeb495, type: 3}
+    transform: {fileID: 8493540045598270059}
   - name: LaserSight
-    transform: {fileID: 6319590431070583142, guid: edbb553c452813b4dbc885c81efeb495, type: 3}
+    transform: {fileID: 7860820204500036680}
   - name: Laser
-    transform: {fileID: 2944283115762691589, guid: edbb553c452813b4dbc885c81efeb495, type: 3}
+    transform: {fileID: 5384445628786680258}
