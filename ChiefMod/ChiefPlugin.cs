@@ -37,6 +37,7 @@ namespace ChiefMod
 
             WeaponManager.AddWeapon<SMG>("mdlSMGHalo");
             WeaponManager.AddWeapon<MUP>("mdlMUPHalo");
+            WeaponManager.AddWeapon<AssaultRifle>("mdlAssaultRifle Variant");
 
             WeaponManager.FinishPatch();
         }
