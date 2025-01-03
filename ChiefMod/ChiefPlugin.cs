@@ -7,9 +7,9 @@ namespace ChiefMod
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
     public class ChiefPlugin : BaseUnityPlugin
     {
-        public const string PluginGUID = "com." + PluginAuthor + "." + PluginName;
+        public const string PluginGUID = "_" + PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "LONK";
-        public const string PluginName = "Chief";
+        public const string PluginName = "ChiefMod";
         public const string PluginVersion = "1.0.4";
 
         public static ChiefPlugin Instance { get; private set; }
@@ -22,7 +22,7 @@ namespace ChiefMod
 
             Log.Init(Logger);
 
-            ApplySoundReplacements();
+            //ApplySoundReplacements();
             AddWeaponReskins();
         }
 
@@ -37,6 +37,8 @@ namespace ChiefMod
 
             WeaponManager.AddWeapon<SMG>("mdlSMGHalo");
             WeaponManager.AddWeapon<MUP>("mdlMUPHalo");
+            WeaponManager.AddWeapon<AssaultRifle>("mdlAssaultRifleUNSC");
+            WeaponManager.AddWeapon<Shotgun>("mdlShotgunHalo");
 
             WeaponManager.FinishPatch();
         }

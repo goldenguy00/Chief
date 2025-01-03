@@ -11,6 +11,11 @@
 	  <EmbeddedResource Remove="Libraries\**" />
 	  <None Remove="Libraries\**" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove=".gitignore" />
+	  <None Remove="postbuild.bat" />
+	</ItemGroup>
 	
 	<ItemGroup>
 		<PackageReference Include="BepInEx.Analyzers" Version="1.0.8">

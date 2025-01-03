@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2375681576
+CRC: 1553220493
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: f00348aaef1796f50b156577801d4c2f
+    Hash: 6e8fd7bf59c517768b7668f109c928c3
   TypeTreeHash:
     serializedVersion: 2
     Hash: 533067e4812aea021709a65abdf35592
@@ -37,6 +37,10 @@ SerializeReferenceClassIdentifiers:
 Assets:
 - Assets/Chief/Weapons/mdlSMGHaloPickup.prefab
 - Assets/Chief/Weapons/mdlSMGHalo.prefab
+- Assets/Chief/Weapons/mdlShotgunHaloPickup.prefab
 - Assets/Chief/Weapons/mdlMUPHaloPickup.prefab
 - Assets/Chief/Weapons/mdlMUPHalo.prefab
+- Assets/Chief/Weapons/mdlAssaultRifleUNSC.prefab
+- Assets/Chief/Weapons/mdlShotgunHalo.prefab
+- Assets/Chief/Weapons/mdlAssaultRifleUNSCPickup.prefab
 Dependencies: []

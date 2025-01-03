@@ -33,8 +33,9 @@ namespace ChiefMod
 
                         foreach (var asset in bundle.LoadAllAssets<GameObject>())
                         {
-                            Log.Warning($"Found {asset.name}");
-                            modelPrefabsByName[asset.name] = asset;
+                            var name = asset.name.Split('/').Last();
+                            Log.Warning($"Found {name}");
+                            modelPrefabsByName[name] = asset;
                         }
                     }
                     else
@@ -71,7 +72,7 @@ namespace ChiefMod
 
             if (modelPrefabsByName.TryGetValue(modelName, out var modelPrefab) && modelPrefab != null)
             {
-                Log.Warning($"Successfully replaced {propertyInfo.DeclaringType.Name} with new model {modelPrefab.name}");
+                //Log.Warning($"Successfully replaced {propertyInfo.DeclaringType.Name} with new model {modelPrefab.name}");
                 return modelPrefab;
             }
 
