@@ -1,4 +1,6 @@
+using System.Runtime.CompilerServices;
 using BepInEx;
+using ChiefMod;
 using HarmonyLib;
 using HunkMod.Modules.Weapons;
 
@@ -37,8 +39,12 @@ namespace ChiefMod
 
             WeaponManager.AddWeapon<SMG>("mdlSMGHalo");
             WeaponManager.AddWeapon<MUP>("mdlMUPHalo");
+            WeaponManager.AddWeapon<Shotgun>("mdlShotgunHalo");
+            WeaponManager.AddWeapon<AssaultRifle>("mdlAssaultRifleUNSC");
 
             WeaponManager.FinishPatch();
         }
     }
 }
+
+       
