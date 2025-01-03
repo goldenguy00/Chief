@@ -7,9 +7,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4167053226414762602, guid: 9c596d7b05b46944991f976c732d67c2, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5663369069292381425, guid: 9c596d7b05b46944991f976c732d67c2, type: 3}
       propertyPath: m_Name
-      value: mdlAssaultRiflePickup
+      value: mdlAssaultRiflePickup Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6737410610336561749, guid: 9c596d7b05b46944991f976c732d67c2, type: 3}
       propertyPath: m_RootOrder
