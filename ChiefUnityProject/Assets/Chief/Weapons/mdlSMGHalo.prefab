@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1313270126451958031}
   - component: {fileID: 474410264279876311}
   m_Layer: 0
-  m_Name: 24_+Additions|Magazine.magazine_0.4_0_0
+  m_Name: Magazine
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -363,6 +363,89 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!1 &3678488555434588782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4228631146924877317}
+  - component: {fileID: 7037330995562057424}
+  - component: {fileID: 1104262619007058657}
+  m_Layer: 0
+  m_Name: Moderator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4228631146924877317
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678488555434588782}
+  m_LocalRotation: {x: 0.7126853, y: -0.009467869, z: 0.01571193, w: -0.70124406}
+  m_LocalPosition: {x: 0.02000096, y: 0.690008, z: -11.430023}
+  m_LocalScale: {x: 20911.08, y: 20911.074, z: 20911.055}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6704285908862290698}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: -87.759, y: -245.817, z: 605.311}
+--- !u!33 &7037330995562057424
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678488555434588782}
+  m_Mesh: {fileID: 2077939571771757777, guid: b524372b84bf63e468e3505431fcc033, type: 3}
+--- !u!23 &1104262619007058657
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678488555434588782}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 9e74714a7a6ad21468c71e8ebd73f03d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!1 &3904799147641497539
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,7 +542,7 @@ GameObject:
   - component: {fileID: 1288224762922986138}
   - component: {fileID: 595628010986687677}
   m_Layer: 0
-  m_Name: 24_-Upgrades|Barrel.extensionr_0.3_0_0
+  m_Name: ModeratorOld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -495,7 +578,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4108275196337427148}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -508,7 +591,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 9ecb7bfd5791269479e973189ac229e6, type: 2}
+  - {fileID: 2100000, guid: 9e74714a7a6ad21468c71e8ebd73f03d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -704,6 +787,7 @@ Transform:
   - {fileID: 4013523073739128426}
   - {fileID: 7627743955007395659}
   - {fileID: 8901773616131221030}
+  - {fileID: 4228631146924877317}
   m_Father: {fileID: 1222070606479296850}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 81.798, y: -5.445, z: 173.467}

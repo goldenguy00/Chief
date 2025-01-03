@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5545606290894589093
 Transform:
   m_ObjectHideFlags: 0
@@ -867,12 +867,12 @@ GameObject:
   - component: {fileID: 4778746847435393618}
   - component: {fileID: 5539985375000641585}
   m_Layer: 0
-  m_Name: 24_-Upgrades|Extended Clip.clipextendedr_0.3_0_0
+  m_Name: ExtendedMag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4347408495923235726
 Transform:
   m_ObjectHideFlags: 0
@@ -1506,12 +1506,12 @@ GameObject:
   - component: {fileID: 5811270152673452276}
   - component: {fileID: 6730004179191305687}
   m_Layer: 0
-  m_Name: 24_-Upgrades|Matilda Stock.stockr_0.3_0_0
+  m_Name: Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6026709420650644348
 Transform:
   m_ObjectHideFlags: 0
@@ -2513,12 +2513,12 @@ GameObject:
   - component: {fileID: 6144896087249575625}
   - component: {fileID: 6207176502825532983}
   m_Layer: 0
-  m_Name: 24_-Upgrades|Barrel.extensionr_0.3_0_0
+  m_Name: MuzzleBrake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6400748996747296815
 Transform:
   m_ObjectHideFlags: 0

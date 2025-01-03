@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 8902830880907610130}
   - component: {fileID: 858797184384063859}
   m_Layer: 0
-  m_Name: 24_-Upgrades|Matilda Stock.stockr_0.3_0_0
+  m_Name: Stock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -841,7 +841,7 @@ GameObject:
   - component: {fileID: 3061657830732558293}
   - component: {fileID: 7077437871150807430}
   m_Layer: 0
-  m_Name: 24_-Upgrades|Extended Clip.clipextendedr_0.3_0_0
+  m_Name: ExtendedMag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1090,7 +1090,7 @@ GameObject:
   - component: {fileID: 9121960648436434784}
   - component: {fileID: 375040112821338426}
   m_Layer: 0
-  m_Name: 24_-Upgrades|Barrel.extensionr_0.3_0_0
+  m_Name: MuzzleBrake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
