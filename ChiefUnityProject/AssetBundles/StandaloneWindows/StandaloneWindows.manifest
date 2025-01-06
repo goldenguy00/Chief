@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 1637340465
+CRC: 405501424
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: weapons
+      Dependencies: {}
+    Info_1:
+      Name: lonkchief
       Dependencies: {}

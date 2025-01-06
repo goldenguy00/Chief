@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using HarmonyLib;
+﻿using HarmonyLib;
 using HunkMod.Modules.Components;
 
 namespace ChiefMod
-{ 
+{
     [HarmonyPatch(typeof(HunkDialogue))]
     internal class Sound_replacement
     {

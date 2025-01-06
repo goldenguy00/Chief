@@ -33,7 +33,19 @@
 	    <HintPath>Libraries\HunkMod.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
+    
+    <Target Name="ChangeAliasesOfStrongNameAssemblies" BeforeTargets="FindReferenceAssembliesForReferences;ResolveReferences">
+        <ItemGroup>
+            <ReferencePath Condition="'%(FileName)' == 'Rewired_CSharp'">
+                <Aliases>Rewired_CSharp_NS</Aliases>
+            </ReferencePath>
 
+            <ReferencePath Condition="'%(FileName)' == 'Rewired_Core'">
+                <Aliases>Rewired_Core_NS</Aliases>
+            </ReferencePath>
+        </ItemGroup>
+    </Target>
+    
 	<Target Name="PostBuild" AfterTargets="PostBuildEvent">
 		<Exec Command="./postbuild.bat $(SolutionDir) $(TargetDir) $(TargetName)" />
 	</Target>

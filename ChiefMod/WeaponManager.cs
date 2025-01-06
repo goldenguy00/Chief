@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Reflection;
 using HarmonyLib;
 using HunkMod.Modules;
+using HunkMod.Modules.Survivors;
 using HunkMod.Modules.Weapons;
+using RoR2;
 using UnityEngine;
 
 namespace ChiefMod
@@ -13,14 +14,15 @@ namespace ChiefMod
     /// <summary>
     /// trying to comprehend this class is a health risk, don't do it
     /// </summary>
-    public static class WeaponManager
+    internal static class WeaponManager
     {
-        internal static readonly Dictionary<string, GameObject> modelPrefabsByName = [];
-        internal static readonly Dictionary<Type, string> prefabNamesByType = [];
+        internal static readonly Dictionary<string, AssetBundle> loadedBundles = [];
+        internal static readonly Dictionary<string, IEnumerable<string>> loadedBundleAssetNames = [];
+        internal static readonly Dictionary<HunkWeaponDef, string> prefabNamesByType = [];
 
         internal static void Init()
         {
-            var bundleFiles = Directory.EnumerateFiles(Path.GetDirectoryName(ChiefPlugin.Instance.Info.Location), "*", SearchOption.AllDirectories).Where(p => !Path.HasExtension(p));
+            var bundleFiles = Directory.EnumerateFiles(System.IO.Path.GetDirectoryName(ChiefPlugin.Instance.Info.Location), "*", SearchOption.AllDirectories).Where(p => !System.IO.Path.HasExtension(p));
 
             foreach (var bundleName in bundleFiles)
             {
@@ -32,12 +34,25 @@ namespace ChiefMod
                     {
                         Log.Warning($"Loading assetbundle {bundle.name}...");
 
-                        foreach (var asset in bundle.LoadAllAssets<GameObject>())
+                        loadedBundles[bundle.name] = bundle;
+                        loadedBundleAssetNames[bundle.name] = bundle.GetAllAssetNames().AsEnumerable();
+
+                        bundle.LoadAllAssetsAsync().completed += o =>
                         {
-                            var name = asset.name.Split('/').Last();
-                            Log.Warning($"Found {name}");
-                            modelPrefabsByName[name] = asset;
-                        }
+                            foreach (var asset in (o as AssetBundleRequest).allAssets)
+                            {
+                                if (asset is GameObject go)
+                                {
+                                    Log.Error("Converting GameObject " + go.name);
+                                    ChiefSkin.ConvertAllRenderersToHopooShader(go);
+                                }
+                                else if (asset is Material mat)
+                                {
+                                    Log.Warning("Converting material " + mat.name);
+                                    HunkAssets.ConvertMaterial(mat);
+                                }
+                            }
+                        };
                     }
                     else
                     {
@@ -47,104 +62,44 @@ namespace ChiefMod
             }
         }
 
-        public static void FinishPatch()
+        public static void AddWeapon(HunkWeaponDef weaponDef, string prefabReplacementName)
         {
-            if (prefabNamesByType.Any())
-            {
-                ChiefPlugin.Harm.CreateClassProcessor(typeof(BetterMaterialReplacement)).Patch();
-                ChiefPlugin.Harm.CreateClassProcessor(typeof(ReplacePrefab)).Patch();
-                ChiefPlugin.Harm.CreateClassProcessor(typeof(ReplacePickup)).Patch();
-            }
-            else
-                Log.Error("No replacements found, did you forget to add it?");
+            if (!prefabReplacementName.StartsWith("Assets/Chief/Weapons/"))
+                prefabReplacementName = "Assets/Chief/Weapons/" + prefabReplacementName;
+
+            if (!prefabReplacementName.EndsWith(".prefab"))
+                prefabReplacementName += ".prefab";
+
+            prefabNamesByType[weaponDef] = prefabReplacementName;
+
+            Log.Warning($"Replacing {weaponDef.name} with {prefabReplacementName}");
         }
 
-        public static void AddWeapon<T>(string prefabReplacementName) where T : BaseWeapon
+        public static void AddWeaponSkins(SkinDef skin)
         {
-            prefabNamesByType[typeof(T)] = prefabReplacementName;
-
-            Log.Warning($"Replacing {typeof(T).Name}.{nameof(BaseWeapon.modelPrefab)} with {prefabReplacementName}");
+            foreach (var kvp in prefabNamesByType)
+            {
+                Hunk.AddGunSkin(skin, kvp.Key, LoadAsset<GameObject>(kvp.Value));
+            }
         }
 
-        internal static GameObject LoadModelPrefab(MethodBase propertyInfo, bool isPickup = false)
+        public static T LoadAsset<T>(string path) where T : UnityEngine.Object
         {
-            var modelName = prefabNamesByType[propertyInfo.DeclaringType];
-            if (isPickup)
-                modelName += "Pickup";
-
-            if (modelPrefabsByName.TryGetValue(modelName, out var modelPrefab) && modelPrefab != null)
+            foreach (var kvp in loadedBundleAssetNames)
             {
-                if (isPickup)
-                    BetterMaterialReplacement.ConvertAllRenderersToHopooShader(ref modelPrefab, ref isPickup);
-                return modelPrefab;
+                if (kvp.Value.Contains(path.ToLower()))
+                {
+                    return loadedBundles[kvp.Key].LoadAsset<T>(path);
+                }
             }
 
-            Log.ErrorAsset(modelName);
+            Log.ErrorAsset(path);
+
+            Log.Warning("Current asset paths");
+            foreach (var name in loadedBundleAssetNames.SelectMany(kvp => kvp.Value))
+                Log.Error(name);
+
             return null;
         }
-
-
-    }
-
-    [HarmonyPatch]
-    public class BetterMaterialReplacement
-    {
-        [HarmonyPatch(typeof(HunkAssets), nameof(HunkAssets.ConvertAllRenderersToHopooShader), [typeof(GameObject), typeof(bool)])]
-        [HarmonyPrefix]
-        public static void ConvertAllRenderersToHopooShader(ref GameObject objectToConvert, ref bool onlyMeshes)
-        {
-            Renderer[] componentsInChildren = objectToConvert.GetComponentsInChildren<Renderer>();
-            foreach (Renderer renderer in componentsInChildren)
-            {
-                if (!renderer || !renderer.material)
-                {
-                    continue;
-                }
-
-                if (onlyMeshes)
-                {
-                    if (!renderer.GetComponent<LineRenderer>() && !renderer.GetComponent<TrailRenderer>() && !renderer.GetComponent<ParticleSystemRenderer>())
-                    {
-                        ConvertAllRenderersToHopooShader(renderer);
-                    }
-                }
-                else
-                {
-                    ConvertAllRenderersToHopooShader(renderer);
-                }
-            }
-        }
-
-        public static void ConvertAllRenderersToHopooShader(Renderer renderer)
-        {
-            Material[] materials = renderer.materials;
-            foreach (Material material in materials)
-            {
-                if ((bool)material)
-                {
-                    HunkAssets.ConvertMaterial(material);
-                }
-            }
-        }
-    }
-
-    [HarmonyPatch]
-    public class ReplacePrefab
-    {
-        [HarmonyTargetMethods]
-        public static IEnumerable<MethodBase> TargetMethods() => WeaponManager.prefabNamesByType.Keys.Select(t => AccessTools.PropertyGetter(t, nameof(BaseWeapon.modelPrefab)));
-
-        [HarmonyPrefix]
-        public static bool Prefix(MethodBase __originalMethod, ref GameObject __result) => (__result = WeaponManager.LoadModelPrefab(__originalMethod)) == null;
-    }
-
-    [HarmonyPatch]
-    public class ReplacePickup
-    {
-        [HarmonyTargetMethods]
-        public static IEnumerable<MethodBase> TargetMethods() => WeaponManager.prefabNamesByType.Keys.Select(t => AccessTools.Method(t, nameof(BaseWeapon.Init)));
-
-        [HarmonyPostfix]
-        public static void Postfix(MethodBase __originalMethod, BaseWeapon __instance) => __instance.itemDef.pickupModelPrefab = WeaponManager.LoadModelPrefab(__originalMethod, true);
     }
 }
