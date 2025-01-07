@@ -3,7 +3,62 @@ guid: 10a2764e03feae74a9c2e6ede27e9f41
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: e44e07754bfbee142a6c59a9c16cd247, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Boltik
+    second: {fileID: 2100000, guid: efbc41df3fc1e264a9934a282021d3ab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 73d68b0df5c21274c88d228dcc4bf704, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 8ca6ac0e986e54b47acf282cf1a8eb12, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top_projector
+    second: {fileID: 2100000, guid: 4faa68b4f1eca29459ffe213f8b07573, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: fixator
+    second: {fileID: 2100000, guid: 4533fac62660d0043bd5b0420dc76714, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pikatini
+    second: {fileID: 2100000, guid: 44c8103e4b92f4e4ca5650084c62db8f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prokladka1
+    second: {fileID: 2100000, guid: eff317ed86c0aa3409880afb19080537, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: prokladka2
+    second: {fileID: 2100000, guid: e2d8ffb7f8d4d6f4fbd047f13698c531, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: seleactor_dot
+    second: {fileID: 2100000, guid: 443f420d1597afd4a94d5bad206e0278, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: selector_color
+    second: {fileID: 2100000, guid: df20768013a2f524ca8fee12b01158fe, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

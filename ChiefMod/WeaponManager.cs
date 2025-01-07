@@ -62,7 +62,7 @@ namespace ChiefMod
             }
         }
 
-        public static void AddWeapon(HunkWeaponDef weaponDef, string prefabReplacementName)
+        public static void AddWeapon<T>(HunkWeaponDef weaponDef, string prefabReplacementName) where T : MonoBehaviour
         {
             if (!prefabReplacementName.StartsWith("Assets/Chief/Weapons/"))
                 prefabReplacementName = "Assets/Chief/Weapons/" + prefabReplacementName;
@@ -76,7 +76,7 @@ namespace ChiefMod
                 Log.ErrorAsset(prefabReplacementName);
                 return;
             }
-
+            weaponPrefab.AddComponent<T>();
             Log.Warning($"Replacing {weaponDef.name} with {prefabReplacementName}");
 
             Hunk.AddGunSkin(null, weaponDef, weaponPrefab);
