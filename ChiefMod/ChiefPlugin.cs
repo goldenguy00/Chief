@@ -23,24 +23,26 @@ namespace ChiefMod
 
             Log.Init(Logger);
 
-            //ApplySoundReplacements();
-            AddWeaponReskins();
-        }
-
-        private void ApplySoundReplacements()
-        {
-            Harm.CreateClassProcessor(typeof(EscapeSequence)).Patch();
-        }
-
-        private void AddWeaponReskins()
-        {
-            WeaponManager.Init();
             ChiefSkin.Init();
+
+            WeaponManager.Init();
+            WeaponManager.OnLoadCompleted += AddWeapons;
+            //ApplySoundReplacements();
+        }
+        
+        public static void AddWeapons()
+        {
+            new PlasmaRifle().Init();
 
             WeaponManager.AddWeapon(SMG.instance.weaponDef, "mdlSMGHalo");
             WeaponManager.AddWeapon(MUP.instance.weaponDef, "mdlMUPHalo");
             WeaponManager.AddWeapon(AssaultRifle.instance.weaponDef, "mdlAssaultRifleUNSC");
             WeaponManager.AddWeapon(Shotgun.instance.weaponDef, "mdlShotgunHalo");
+        }
+
+        private void ApplySoundReplacements()
+        {
+            Harm.CreateClassProcessor(typeof(EscapeSequence)).Patch();
         }
     }
 }

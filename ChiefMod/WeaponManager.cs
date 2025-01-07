@@ -18,11 +18,13 @@ namespace ChiefMod
     {
         internal static readonly Dictionary<string, AssetBundle> loadedBundles = [];
         internal static readonly Dictionary<string, IEnumerable<string>> loadedBundleAssetNames = [];
-        internal static readonly Dictionary<HunkWeaponDef, string> prefabNamesByType = [];
+
+        internal static event Action OnLoadCompleted;
 
         internal static void Init()
         {
             var bundleFiles = Directory.EnumerateFiles(System.IO.Path.GetDirectoryName(ChiefPlugin.Instance.Info.Location), "*", SearchOption.AllDirectories).Where(p => !System.IO.Path.HasExtension(p));
+            var bundleCount = bundleFiles.Count();
 
             foreach (var bundleName in bundleFiles)
             {
@@ -42,16 +44,14 @@ namespace ChiefMod
                             foreach (var asset in (o as AssetBundleRequest).allAssets)
                             {
                                 if (asset is GameObject go)
-                                {
-                                    Log.Error("Converting GameObject " + go.name);
                                     ChiefSkin.ConvertAllRenderersToHopooShader(go);
-                                }
                                 else if (asset is Material mat)
-                                {
-                                    Log.Warning("Converting material " + mat.name);
                                     HunkAssets.ConvertMaterial(mat);
-                                }
                             }
+
+                            if (loadedBundles.Count == bundleCount)
+                                OnLoadCompleted?.Invoke();
+
                         };
                     }
                     else
@@ -70,17 +70,16 @@ namespace ChiefMod
             if (!prefabReplacementName.EndsWith(".prefab"))
                 prefabReplacementName += ".prefab";
 
-            prefabNamesByType[weaponDef] = prefabReplacementName;
+            var weaponPrefab = LoadAsset<GameObject>(prefabReplacementName);
+            if (!weaponPrefab)
+            {
+                Log.ErrorAsset(prefabReplacementName);
+                return;
+            }
 
             Log.Warning($"Replacing {weaponDef.name} with {prefabReplacementName}");
-        }
 
-        public static void AddWeaponSkins(SkinDef skin)
-        {
-            foreach (var kvp in prefabNamesByType)
-            {
-                Hunk.AddGunSkin(skin, kvp.Key, LoadAsset<GameObject>(kvp.Value));
-            }
+            Hunk.AddGunSkin(null, weaponDef, weaponPrefab);
         }
 
         public static T LoadAsset<T>(string path) where T : UnityEngine.Object

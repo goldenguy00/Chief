@@ -125,8 +125,6 @@ namespace ChiefMod
             Array.Resize(ref modelSkinController.skins, modelSkinController.skins.Length + 1);
             modelSkinController.skins[^1] = skin;
             BodyCatalog.skins[(int)BodyCatalog.FindBodyIndex(bodyObject)] = modelSkinController.skins;
-
-            WeaponManager.AddWeaponSkins(skin);
         }
 
         public static void ConvertAllRenderersToHopooShader(GameObject objectToConvert, bool onlyMeshes = true)
