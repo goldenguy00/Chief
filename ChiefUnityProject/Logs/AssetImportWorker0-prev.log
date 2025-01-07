@@ -15,7 +15,7 @@ C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50252
+50878
 Successfully changed project path to: C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
 C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,12 +47,12 @@ C:/Users/golde/Documents/GitHub/_COLLAB/Chief/ChiefUnityProject
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8540] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 2070173946 [EditorId] 2070173946 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [16320] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 893529143 [EditorId] 893529143 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [8540] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 2070173946 [EditorId] 2070173946 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [16320] Host "[IP] 10.0.0.94 [Port] 0 [Flags] 2 [Guid] 893529143 [EditorId] 893529143 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-AQEK2EM) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with {0} workers.
-Refreshing native plugins compatible for Editor in 93.33 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 98.67 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.33f1 (ee5a2aa03ab2)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Resources/UnitySubsystems
@@ -68,37 +68,37 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56044
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56816
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.33f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007662 seconds.
+Registered in 0.005549 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 99.07 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 95.69 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.762 seconds
+- Completed reload, in  0.765 seconds
 Domain Reload Profiling:
-	ReloadAssembly (763ms)
-		BeginReloadAssembly (110ms)
+	ReloadAssembly (766ms)
+		BeginReloadAssembly (111ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (536ms)
-			LoadAssemblies (107ms)
+		EndReloadAssembly (539ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (117ms)
+			SetupTypeCache (124ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (32ms)
-			SetupLoadedEditorAssemblies (339ms)
+			SetupLoadedEditorAssemblies (336ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (99ms)
+				RefreshPlugins (96ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (175ms)
+				ProcessInitializeOnLoadAttributes (176ms)
 				ProcessInitializeOnLoadMethodAttributes (54ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
@@ -106,38 +106,38 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.006234 seconds.
+Registered in 0.006491 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Completed reload, in  1.691 seconds
+- Completed reload, in  1.693 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1692ms)
-		BeginReloadAssembly (148ms)
+	ReloadAssembly (1694ms)
+		BeginReloadAssembly (151ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (7ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (22ms)
-		EndReloadAssembly (1425ms)
-			LoadAssemblies (119ms)
+			CreateAndSetChildDomain (21ms)
+		EndReloadAssembly (1420ms)
+			LoadAssemblies (116ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (305ms)
+			SetupTypeCache (300ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (61ms)
-			SetupLoadedEditorAssemblies (927ms)
+			RebuildScriptCaches (57ms)
+			SetupLoadedEditorAssemblies (925ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
+				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (95ms)
-				ProcessInitializeOnLoadAttributes (789ms)
-				ProcessInitializeOnLoadMethodAttributes (29ms)
+				BeforeProcessingInitializeOnLoad (98ms)
+				ProcessInitializeOnLoadAttributes (782ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
 				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -145,13 +145,13 @@ Domain Reload Profiling:
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 0.99 ms, found 4 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3576 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 25 unused Assets / (20.4 KB). Loaded Objects now: 4054.
 Memory consumption went from 138.5 MB to 138.5 MB.
-Total: 13.818000 ms (FindLiveObjects: 0.358000 ms CreateObjectMapping: 0.090600 ms MarkObjects: 13.333900 ms  DeleteObjects: 0.034100 ms)
+Total: 12.674400 ms (FindLiveObjects: 0.334300 ms CreateObjectMapping: 0.090300 ms MarkObjects: 12.214600 ms  DeleteObjects: 0.033700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -167,295 +167,342 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4093.517689 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(d8106c1a2b01caf45a85c8ea14c8dfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 13979.848951 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts using Guid(d8106c1a2b01caf45a85c8ea14c8dfa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702f212f9e6f70c24329b9fc3da794d7') in 0.017986 seconds 
-Number of asset objects unloaded after import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8478fd1e07f66c5c627e70c274b91a31') in 0.311753 seconds 
+Number of asset objects unloaded after import = 176
 ========================================================================
 Received Import Request.
-  Time since last request: 307.019895 seconds.
-  path: Assets/Scripts/HunkMod.Modules.Components.TransceiverBodyBehavior.cs
-  artifactKey: Guid(e22914c6e220eb5458d81eb462d0def2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 2.008294 seconds.
+  path: Assets/Chief/Weapons/Materials/matExtendedMag.mat
+  artifactKey: Guid(45d20fef30ef6a04788919a376b7c55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/HunkMod.Modules.Components.TransceiverBodyBehavior.cs using Guid(e22914c6e220eb5458d81eb462d0def2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '872b51f7ff262a551b6613e303b37100') in 0.033131 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 12.757445 seconds.
-  path: Assets/Scripts/HunkMod.Modules.Components.StreetSweeperBehavior.cs
-  artifactKey: Guid(4fc0773c080bab9499fe636949feb306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/HunkMod.Modules.Components.StreetSweeperBehavior.cs using Guid(4fc0773c080bab9499fe636949feb306) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13170d5eeb6b2cfaf9fd3eef687734ad') in 0.011097 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.729416 seconds.
-  path: Assets/Scripts/HunkMod.Modules.Components.StarsBadgeBodyBehavior.cs
-  artifactKey: Guid(c06a3152efabe13459d8ad64a0b67cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/HunkMod.Modules.Components.StarsBadgeBodyBehavior.cs using Guid(c06a3152efabe13459d8ad64a0b67cad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '168ebb4d04b02ce4a8c7324c915457db') in 0.011149 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 41.274799 seconds.
-  path: Assets/Scripts/HunkMod.Modules.Components.WeaponBehavior.cs
-  artifactKey: Guid(41bc39b5072ef1747be2a5fa28e33502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/HunkMod.Modules.Components.WeaponBehavior.cs using Guid(41bc39b5072ef1747be2a5fa28e33502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87e77af90e294f698b97a0390d21bbfe') in 0.009616 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 89.830403 seconds.
-  path: Assets/Scripts/Hunk
-  artifactKey: Guid(2f552fb0645282e4c944195343f6afec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/Hunk using Guid(2f552fb0645282e4c944195343f6afec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '114b8c089055e7b78206c606eb5f48aa') in 0.009905 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.416572 seconds.
-  path: Assets/Scripts/HunkMod.Modules.Components.ARBehavior.cs
-  artifactKey: Guid(f5f22986069f75a49a684a0529f9cb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/HunkMod.Modules.Components.ARBehavior.cs using Guid(f5f22986069f75a49a684a0529f9cb94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f62c8bfcdf05e9b5694a6062e2aa3f1') in 0.015480 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.882146 seconds.
-  path: Assets/Scripts/HunkMod.Modules.Components.MagnumBehavior.cs
-  artifactKey: Guid(0dcb4f2b84dd02b47958e2754aed1558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/HunkMod.Modules.Components.MagnumBehavior.cs using Guid(0dcb4f2b84dd02b47958e2754aed1558) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6966c83c21e3a1f58f1ec95b6e9bc5a') in 0.009982 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 20.171442 seconds.
-  path: Assets/Scripts/Hunk/HunkWeaponDefInfo.cs
-  artifactKey: Guid(333cf4d6eaab5764eb254b6b61bc5247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/Hunk/HunkWeaponDefInfo.cs using Guid(333cf4d6eaab5764eb254b6b61bc5247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9d2bec6f159fd0107b0f02a5a032ada') in 0.009896 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 102.325187 seconds.
-  path: Assets/Scripts/CharacterSelectSurvivorPreviewDisplayController.cs
-  artifactKey: Guid(ebc05f30c7a757248af179708b00b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/CharacterSelectSurvivorPreviewDisplayController.cs using Guid(ebc05f30c7a757248af179708b00b801) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a62cf929fc832c80ede06eea59e7f84') in 0.015400 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.504784 seconds.
-  path: Assets/Scripts/ChildLocator.cs
-  artifactKey: Guid(67079b849227b734694872d8810229b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/ChildLocator.cs using Guid(67079b849227b734694872d8810229b8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8026e548c507c39a6663d30a053ae46') in 0.015080 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 5.753184 seconds.
-  path: Assets/Scripts/DestroyOnTimer.cs
-  artifactKey: Guid(2aa2462a23d05b54e9a2ecb2fb686dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/DestroyOnTimer.cs using Guid(2aa2462a23d05b54e9a2ecb2fb686dde) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7597753e4d020f86ca7d097b6c987082') in 0.015471 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.974623 seconds.
-  path: Assets/Scripts/DriverCSS.cs
-  artifactKey: Guid(941cb3883f2fd7b408050d6f7a2dee50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/DriverCSS.cs using Guid(941cb3883f2fd7b408050d6f7a2dee50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c3522d3db679534484283279f8d7f6') in 0.016299 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.332991 seconds.
-  path: Assets/Scripts/DynamicBoneCollider.cs
-  artifactKey: Guid(fef0780b96a0f12448b6dd86f9c8139b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/DynamicBoneCollider.cs using Guid(fef0780b96a0f12448b6dd86f9c8139b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0116dc0dd62ae421bb3e2628548babb') in 0.016143 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.729042 seconds.
-  path: Assets/Scripts/EventFunctions.cs
-  artifactKey: Guid(55cd8dac900b1a24b955c08fee5174f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/EventFunctions.cs using Guid(55cd8dac900b1a24b955c08fee5174f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '972de7c2159847ff6351587a55a2af99') in 0.015032 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.246094 seconds.
-  path: Assets/Scripts/FootstepHandler.cs
-  artifactKey: Guid(0775061d2cda9544482e45d51328027e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/FootstepHandler.cs using Guid(0775061d2cda9544482e45d51328027e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57124e33c5419c85d342d8f6052d3b28') in 0.016660 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.545059 seconds.
-  path: Assets/Scripts/HunkAnimationEvents.cs
-  artifactKey: Guid(4a2add78a98e7404faf735198aa846e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/HunkAnimationEvents.cs using Guid(4a2add78a98e7404faf735198aa846e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a1466a20cfa88ce5c8e283c73aeb5c0') in 0.011758 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 1.184300 seconds.
-  path: Assets/Scripts/NinjaEmissionController.cs
-  artifactKey: Guid(bf39b1ba199ba6147a4698431401b549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/NinjaEmissionController.cs using Guid(bf39b1ba199ba6147a4698431401b549) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb4ea8256dad49418877a4f247bf5ded') in 0.016962 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.868261 seconds.
-  path: Assets/Scripts/PaladinAnimationEvents.cs
-  artifactKey: Guid(4d94658ecd06def44bec0affdece3aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/PaladinAnimationEvents.cs using Guid(4d94658ecd06def44bec0affdece3aca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c90bf12309771fd17525bb8ddf8daaa') in 0.015601 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.614188 seconds.
-  path: Assets/Scripts/RagdollController.cs
-  artifactKey: Guid(db294d07add6b364f99a346939dd2a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/RagdollController.cs using Guid(db294d07add6b364f99a346939dd2a8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe922f881431a5c6ad7896b2768eaf66') in 0.010583 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 29.798093 seconds.
-  path: Assets/Scripts/Hunk/HunkWeaponDef.cs
-  artifactKey: Guid(e8bfa2e31086b8c42aac840706463229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Scripts/Hunk/HunkWeaponDef.cs using Guid(e8bfa2e31086b8c42aac840706463229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6591968379f49f00fcb9cb4c2dcbdd0') in 0.016966 seconds 
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006103 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Completed reload, in  1.606 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1606ms)
-		BeginReloadAssembly (179ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (45ms)
-		EndReloadAssembly (1318ms)
-			LoadAssemblies (115ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (298ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (46ms)
-			SetupLoadedEditorAssemblies (841ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (726ms)
-				ProcessInitializeOnLoadMethodAttributes (23ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (7ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3569 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 21 unused Assets / (21.9 KB). Loaded Objects now: 4057.
-Memory consumption went from 138.1 MB to 138.1 MB.
-Total: 13.666100 ms (FindLiveObjects: 0.344100 ms CreateObjectMapping: 0.089300 ms MarkObjects: 13.202600 ms  DeleteObjects: 0.028600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 329.002310 seconds.
-  path: Assets/Hunk/Materials/matAmmoPickup.mat
-  artifactKey: Guid(4bfa41ed56e297d4895090c59007bbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matAmmoPickup.mat using Guid(4bfa41ed56e297d4895090c59007bbaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53ea08a052408527d8fa8afabeafc97f') in 0.185539 seconds 
-Number of asset objects unloaded after import = 1
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Hunk/Materials/matBadge.mat
-  artifactKey: Guid(ae2183316a7bc974cbdaf8f977340510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matBadge.mat using Guid(ae2183316a7bc974cbdaf8f977340510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80f9e19f6a898d0ac38753695d2c0072') in 0.097537 seconds 
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Hunk/Materials/matC4.mat
-  artifactKey: Guid(e548cfeea1b78d442bc9a61fbea44821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matC4.mat using Guid(e548cfeea1b78d442bc9a61fbea44821) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54c68b2a8ad3a561e0948eda4c88fc93') in 0.048168 seconds 
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Hunk/Materials/matCVirusSample.mat
-  artifactKey: Guid(2f708d0503468074d97668c981b6b780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matCVirusSample.mat using Guid(2f708d0503468074d97668c981b6b780) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f791af2094334d4ef670a930e083839a') in 0.073314 seconds 
+Start importing Assets/Chief/Weapons/Materials/matExtendedMag.mat using Guid(45d20fef30ef6a04788919a376b7c55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcdb26aff154de4c223a08f2e413da0b') in 0.038377 seconds 
 Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Hunk/Materials/matBroomHC.mat
-  artifactKey: Guid(822bebfa85448664cb3fe3ddf4330ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 166.950300 seconds.
+  path: Assets/Chief/FBX/HaloHunk_SMG.fbx
+  artifactKey: Guid(1c0344645c92c9e47b775f3e492c8c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matBroomHC.mat using Guid(822bebfa85448664cb3fe3ddf4330ad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77e0be6024a36eafd61375195a28522c') in 0.051791 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Chief/FBX/HaloHunk_SMG.fbx using Guid(1c0344645c92c9e47b775f3e492c8c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af459ceada383f92400a069ddba3e63a') in 0.099061 seconds 
+Number of asset objects unloaded after import = 60
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Hunk/Materials/matBeret.mat
-  artifactKey: Guid(2ef0f1b844d727c4f8fb5cc655463fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 89.230884 seconds.
+  path: Assets/Chief/Weapons/Materials/matExtendedMagPistol.mat
+  artifactKey: Guid(45d20fef30ef6a04788919a376b7c55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matBeret.mat using Guid(2ef0f1b844d727c4f8fb5cc655463fc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80cb667bc733f2c30a14793aeeba2f1b') in 0.059472 seconds 
-Number of asset objects unloaded after import = 3
+Start importing Assets/Chief/Weapons/Materials/matExtendedMagPistol.mat using Guid(45d20fef30ef6a04788919a376b7c55e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5020361503783cbd173198e59ecffeb9') in 0.018686 seconds 
+Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Hunk/Materials/matDiamond.mat
-  artifactKey: Guid(d5d5174f362919b42adc2f1c3a6800d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 29.548930 seconds.
+  path: Assets/Chief/Weapons/Textures/Leon_LI5_N.png
+  artifactKey: Guid(1c4cd6cab07eae24ebefc37b02908600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matDiamond.mat using Guid(d5d5174f362919b42adc2f1c3a6800d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02735b08c98f2bf44b1822fa31fe6246') in 0.041752 seconds 
+Start importing Assets/Chief/Weapons/Textures/Leon_LI5_N.png using Guid(1c4cd6cab07eae24ebefc37b02908600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7436cce8d8553f2450529dea07dc61b9') in 0.036133 seconds 
 Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Hunk/Materials/matBarbedBat.mat
-  artifactKey: Guid(42af7956994bf5441ab943a33904c29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+  Time since last request: 15.122417 seconds.
+  path: Assets/Chief/Weapons/Textures/texExtendedMag_N.png
+  artifactKey: Guid(1c4cd6cab07eae24ebefc37b02908600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Number of updated assets reloaded before import = 0
-Start importing Assets/Hunk/Materials/matBarbedBat.mat using Guid(42af7956994bf5441ab943a33904c29f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '282c330b33861474b53b28de1e5e9a69') in 0.034146 seconds 
+Start importing Assets/Chief/Weapons/Textures/texExtendedMag_N.png using Guid(1c4cd6cab07eae24ebefc37b02908600) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3eeaa766353b4315f85f56d55e9bd1b8') in 0.019025 seconds 
 Number of asset objects unloaded after import = 2
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+========================================================================
+Received Import Request.
+  Time since last request: 18.491642 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31c02b9b88e49f412886d164724ee3c0') in 0.142699 seconds 
+Number of asset objects unloaded after import = 176
+========================================================================
+Received Import Request.
+  Time since last request: 30.406162 seconds.
+  path: Assets/Chief/Weapons/Materials/matExtended.mat
+  artifactKey: Guid(15f870ce33a2ffa479abf8d10fe6d7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matExtended.mat using Guid(15f870ce33a2ffa479abf8d10fe6d7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eefc34de55bbb19fc4f23dba3bc55a4e') in 0.018718 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 47.619839 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '374291638a6f6a8f6422a7aebc93d9f2') in 0.126039 seconds 
+Number of asset objects unloaded after import = 174
+========================================================================
+Received Import Request.
+  Time since last request: 57.559266 seconds.
+  path: Assets/Chief/Weapons/Materials/matLaser.mat
+  artifactKey: Guid(6515973837b386d43b6a5e36668b75cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matLaser.mat using Guid(6515973837b386d43b6a5e36668b75cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec5ec2c29b57064e92bce886ed7a0120') in 0.014584 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 41.391625 seconds.
+  path: Assets/Chief/Weapons/Materials/matLaserSight.mat
+  artifactKey: Guid(6515973837b386d43b6a5e36668b75cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matLaserSight.mat using Guid(6515973837b386d43b6a5e36668b75cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e69df06dbed675d9978a3ea773bfed40') in 0.018190 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 2.395811 seconds.
+  path: Assets/Chief/Weapons/mdlAssaultRifleHalo.prefab
+  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlAssaultRifleHalo.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1022c0c9a5d8c618b211bbb8e6fe24bd') in 0.031399 seconds 
+Number of asset objects unloaded after import = 26
+========================================================================
+Received Import Request.
+  Time since last request: 10.008904 seconds.
+  path: Assets/Chief/Weapons/mdlAssaultRifleHalo.prefab
+  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlAssaultRifleHalo.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4223ffa09ebc36f8736994af07598e') in 0.028816 seconds 
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 1.171580 seconds.
+  path: Assets/Chief/Weapons/mdlAssaultRifleHalo.prefab
+  artifactKey: Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlAssaultRifleHalo.prefab using Guid(dd1937f6f1ab97549a444e911fd6c370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7095ce8f829780c9a571ff240077b1c') in 0.032921 seconds 
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 15.733527 seconds.
+  path: Assets/Chief/Weapons/mdlSMGHalo.prefab
+  artifactKey: Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlSMGHalo.prefab using Guid(ef5c47c0f1332bd41b1250b9466e84ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3d95fbd71f7e21dafc8d2a74945c6ab') in 0.061702 seconds 
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 25.938045 seconds.
+  path: Assets/Chief/Weapons/Materials/matLaserSightP.mat
+  artifactKey: Guid(c95f03d407eda2d43ba355d36a4a5233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matLaserSightP.mat using Guid(c95f03d407eda2d43ba355d36a4a5233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad60935440549fdc5d198b9169388493') in 0.016740 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 48.531262 seconds.
+  path: Assets/Chief/Weapons/Materials/matLaserSightPistol.mat
+  artifactKey: Guid(c95f03d407eda2d43ba355d36a4a5233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matLaserSightPistol.mat using Guid(c95f03d407eda2d43ba355d36a4a5233) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d739123b7e0a80ce3ee76865915a5d3') in 0.016923 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 16.802124 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00b0140098f0a156625ea940eaed226f') in 0.126033 seconds 
+Number of asset objects unloaded after import = 170
+========================================================================
+Received Import Request.
+  Time since last request: 10.384099 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7531d983bb6af8fa69c42ed884e07f67') in 0.132822 seconds 
+Number of asset objects unloaded after import = 173
+========================================================================
+Received Import Request.
+  Time since last request: 0.257867 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '978c582204403cfa3ade2c8aa9fff921') in 0.133295 seconds 
+Number of asset objects unloaded after import = 173
+========================================================================
+Received Import Request.
+  Time since last request: 23.129367 seconds.
+  path: Assets/Chief/Weapons/Materials/New Material.mat
+  artifactKey: Guid(70925ed9375bf3d41a2e8b5b0b720fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/New Material.mat using Guid(70925ed9375bf3d41a2e8b5b0b720fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3abb057716436c69713bd58c35607c') in 0.017770 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 5.585622 seconds.
+  path: Assets/Chief/Weapons/Materials/matMod.mat
+  artifactKey: Guid(892a2cf205cd54340882706ec746542a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matMod.mat using Guid(892a2cf205cd54340882706ec746542a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0769e189596136046681e9a9f4f280d') in 0.014255 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 6.883049 seconds.
+  path: Assets/Chief/Weapons/Materials/matmu.mat
+  artifactKey: Guid(70925ed9375bf3d41a2e8b5b0b720fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matmu.mat using Guid(70925ed9375bf3d41a2e8b5b0b720fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9cca64386cba458bdbc2b9d53ed141c') in 0.016725 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 53.450564 seconds.
+  path: Assets/Chief/Weapons/Materials/matModerator.mat
+  artifactKey: Guid(892a2cf205cd54340882706ec746542a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matModerator.mat using Guid(892a2cf205cd54340882706ec746542a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97357a72014e9631fcbb1b0932c5f9e0') in 0.016475 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 12.621492 seconds.
+  path: Assets/Chief/Weapons/Materials/matMUP.mat
+  artifactKey: Guid(70925ed9375bf3d41a2e8b5b0b720fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matMUP.mat using Guid(70925ed9375bf3d41a2e8b5b0b720fae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71dddb00171c53626f63839bf3f8d5b5') in 0.024792 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 23.260655 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df59e923b06607117f6cdb0a121ed555') in 0.130168 seconds 
+Number of asset objects unloaded after import = 172
+========================================================================
+Received Import Request.
+  Time since last request: 19.248342 seconds.
+  path: Assets/Chief/Weapons/Materials/matExtendedMag.mat
+  artifactKey: Guid(15f870ce33a2ffa479abf8d10fe6d7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matExtendedMag.mat using Guid(15f870ce33a2ffa479abf8d10fe6d7dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25bd1077118724e249543e774d0f6a44') in 0.016932 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 37.894784 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aab768a9bddf5faf0fbf556db98b2338') in 0.127039 seconds 
+Number of asset objects unloaded after import = 174
+========================================================================
+Received Import Request.
+  Time since last request: 17.458054 seconds.
+  path: Assets/Chief/Weapons/Materials/matSMGh.mat
+  artifactKey: Guid(4522c8ddf6e77ed4c96e42aff539a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matSMGh.mat using Guid(4522c8ddf6e77ed4c96e42aff539a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e5abca3933881daad7a8069551ba738') in 0.015946 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 41.350892 seconds.
+  path: Assets/Chief/Weapons/Materials/matSMG.mat
+  artifactKey: Guid(4522c8ddf6e77ed4c96e42aff539a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matSMG.mat using Guid(4522c8ddf6e77ed4c96e42aff539a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96c648e86e65464fa321b241d579bf57') in 0.023411 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 56.753211 seconds.
+  path: Assets/Chief/Weapons/Materials/matStock2.mat
+  artifactKey: Guid(deee4ad0bc2a3104c8872d035e45ced8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matStock2.mat using Guid(deee4ad0bc2a3104c8872d035e45ced8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7adba39361add8ca1d745e6e3991a4b') in 0.015055 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.660511 seconds.
+  path: Assets/Chief/Weapons/Materials/matUSPBASE2.mat
+  artifactKey: Guid(e14a7453ecb3b3f49b135ec37ffc4b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matUSPBASE2.mat using Guid(e14a7453ecb3b3f49b135ec37ffc4b52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e69550397a7bee99018cbd100029397') in 0.015414 seconds 
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 77.705532 seconds.
+  path: Assets/Chief/Weapons/Materials/matStock.mat
+  artifactKey: Guid(deee4ad0bc2a3104c8872d035e45ced8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/Materials/matStock.mat using Guid(deee4ad0bc2a3104c8872d035e45ced8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6b136b3266f97469a89fc515fa77142') in 0.017811 seconds 
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 5.704069 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d9b477bc4e70a63dbce13ab4de7c671') in 0.115755 seconds 
+Number of asset objects unloaded after import = 166
+========================================================================
+Received Import Request.
+  Time since last request: 9.912465 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38e4fe7345408cf3dcbdc52794b4c6dc') in 0.124310 seconds 
+Number of asset objects unloaded after import = 169
+========================================================================
+Received Import Request.
+  Time since last request: 15.902544 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52fdb5cee56fe9d29c5422933e9a3e70') in 0.126320 seconds 
+Number of asset objects unloaded after import = 172
+========================================================================
+Received Import Request.
+  Time since last request: 2.099997 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5417dd633ae6d8c77dab8cb041e0653') in 0.122569 seconds 
+Number of asset objects unloaded after import = 172
+========================================================================
+Received Import Request.
+  Time since last request: 13.108629 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbc9c41be9e27c948cff276808c8bf88') in 0.128606 seconds 
+Number of asset objects unloaded after import = 172
+========================================================================
+Received Import Request.
+  Time since last request: 10.302399 seconds.
+  path: Assets/Chief/Weapons/mdlMUPHalo.prefab
+  artifactKey: Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/Weapons/mdlMUPHalo.prefab using Guid(de43f48f363bcb44d97c3249b9a0d207) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da5a4c200d1353ba7ebf249955a0bc3') in 0.125756 seconds 
+Number of asset objects unloaded after import = 172
+========================================================================
+Received Import Request.
+  Time since last request: 58.922124 seconds.
+  path: Assets/Chief/FBX/HaloHunk_SMG.fbx
+  artifactKey: Guid(1c0344645c92c9e47b775f3e492c8c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Number of updated assets reloaded before import = 0
+Start importing Assets/Chief/FBX/HaloHunk_SMG.fbx using Guid(1c0344645c92c9e47b775f3e492c8c30) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae5919aea8cd79e5bc584ff35edf8b6a') in 0.065057 seconds 
+Number of asset objects unloaded after import = 49
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 5.12 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 20 unused Assets / (22.6 KB). Loaded Objects now: 4102.
+Memory consumption went from 72.1 MB to 72.0 MB.
+Total: 14.511300 ms (FindLiveObjects: 0.354900 ms CreateObjectMapping: 0.091400 ms MarkObjects: 14.030200 ms  DeleteObjects: 0.033900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:CustomObjectIndexerAttribute: bc11b3a6c3213fcdd17b65e7da85e133 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

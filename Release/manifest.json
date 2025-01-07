@@ -1,7 +1,7 @@
 ﻿{
     "name": "Chief",
     "author": "LONK",
-    "version_number": "1.0.4",
+    "version_number": "1.0.5",
     "website_url": "https://github.com/goldenguy00/Chief",
     "description": "Adds a variety of Halo themed skins for the HUNK mod",
     "dependencies": [

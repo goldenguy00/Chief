@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 708841491
+CRC: 345483560
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 61efd9d04cd7ff034c66ff761c5c7ae7
+    Hash: 4ee8ec0286651f427eee360ae845e9bd
   TypeTreeHash:
     serializedVersion: 2
     Hash: 533067e4812aea021709a65abdf35592
@@ -46,7 +46,6 @@ Assets:
 - Assets/Chief/Weapons/Textures/texSmg.png
 - Assets/Chief/Weapons/Meshes/DotSight/meshBolt5.mesh
 - Assets/Chief/Weapons/Textures/texLaserSight_N.png
-- Assets/Chief/Weapons/Textures/texMUP_N.png
 - Assets/Chief/Weapons/Textures/texExtendedMag.png
 - Assets/Chief/Weapons/Textures/texShotgunBase.png
 - Assets/Chief/Weapons/Materials/matModerator.mat
@@ -69,7 +68,6 @@ Assets:
 - Assets/Chief/Weapons/Meshes/DotSight/meshBody2.mesh
 - Assets/Chief/Weapons/Textures/texExtendedMag_N.png
 - Assets/Chief/Weapons/Textures/texModerator.png
-- Assets/Chief/Weapons/Textures/texMUP.png
 - Assets/Chief/Weapons/Meshes/DotSight/meshBody3.mesh
 - Assets/Chief/Weapons/mdlShotgunHalo.prefab
 - Assets/Chief/Weapons/Materials/matLaserSightPistol.mat
@@ -94,9 +92,8 @@ Assets:
 - Assets/Chief/Weapons/Materials/matSmgScope.mat
 - Assets/Chief/Weapons/Materials/matShotgunBase2.mat
 - Assets/Chief/Weapons/Meshes/DotSight/meshProjector.mesh
-- Assets/Chief/Weapons/Materials/matMUP.mat
-- Assets/Chief/Weapons/Textures/texSmgScope.png
 - Assets/Chief/Weapons/Materials/matWhite.mat
+- Assets/Chief/Weapons/Textures/texSmgScope.png
 - Assets/Chief/Weapons/Textures/texRifleBase.png
 - Assets/Chief/Weapons/Materials/matRifleMag.mat
 - Assets/Chief/Weapons/Meshes/meshShotgunUNSC.mesh

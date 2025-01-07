@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using HarmonyLib;
-using HunkMod.Modules;
+using ChiefMod.Modules;
 using HunkMod.Modules.Survivors;
-using HunkMod.Modules.Weapons;
 using RoR2;
 using UnityEngine;
 
@@ -34,25 +32,13 @@ namespace ChiefMod
 
                     if (bundle != null)
                     {
-                        Log.Warning($"Loading assetbundle {bundle.name}...");
+                        Log.Debug($"Loading assetbundle {bundle.name}...");
 
                         loadedBundles[bundle.name] = bundle;
                         loadedBundleAssetNames[bundle.name] = bundle.GetAllAssetNames().AsEnumerable();
 
-                        bundle.LoadAllAssetsAsync().completed += o =>
-                        {
-                            foreach (var asset in (o as AssetBundleRequest).allAssets)
-                            {
-                                if (asset is GameObject go)
-                                    ChiefSkin.ConvertAllRenderersToHopooShader(go);
-                                else if (asset is Material mat)
-                                    HunkAssets.ConvertMaterial(mat);
-                            }
-
-                            if (loadedBundles.Count == bundleCount)
-                                OnLoadCompleted?.Invoke();
-
-                        };
+                        if (loadedBundles.Count == bundleCount)
+                            OnLoadCompleted?.Invoke();
                     }
                     else
                     {
@@ -62,24 +48,53 @@ namespace ChiefMod
             }
         }
 
-        public static void AddWeapon<T>(HunkWeaponDef weaponDef, string prefabReplacementName) where T : MonoBehaviour
+        public static void AddWeapon<T>(HunkWeaponDef weaponDef, string prefabReplacementName, SkinDef chiefSkin = null) where T : MonoBehaviour
         {
             if (!prefabReplacementName.StartsWith("Assets/Chief/Weapons/"))
                 prefabReplacementName = "Assets/Chief/Weapons/" + prefabReplacementName;
 
-            if (!prefabReplacementName.EndsWith(".prefab"))
-                prefabReplacementName += ".prefab";
-
-            var weaponPrefab = LoadAsset<GameObject>(prefabReplacementName);
+            var weaponPrefab = LoadAsset<GameObject>(prefabReplacementName + ".prefab");
             if (!weaponPrefab)
             {
                 Log.ErrorAsset(prefabReplacementName);
                 return;
             }
             weaponPrefab.AddComponent<T>();
-            Log.Warning($"Replacing {weaponDef.name} with {prefabReplacementName}");
 
-            Hunk.AddGunSkin(null, weaponDef, weaponPrefab);
+            Log.Info($"Replacing {weaponDef.name} with {prefabReplacementName}");
+
+            Hunk.AddGunSkin(chiefSkin, weaponDef, weaponPrefab);
+            AddPickupPrefab(weaponDef, prefabReplacementName);
+        }
+
+        public static void AddWeapon(HunkWeaponDef weaponDef, string prefabReplacementName, SkinDef chiefSkin = null)
+        {
+            if (!prefabReplacementName.StartsWith("Assets/Chief/Weapons/"))
+                prefabReplacementName = "Assets/Chief/Weapons/" + prefabReplacementName;
+
+            var weaponPrefab = LoadAsset<GameObject>(prefabReplacementName + ".prefab");
+            if (!weaponPrefab)
+            {
+                Log.ErrorAsset(prefabReplacementName);
+                return;
+            }
+
+            Log.Info($"Replacing {weaponDef.name} with {prefabReplacementName}");
+
+            Hunk.AddGunSkin(chiefSkin, weaponDef, weaponPrefab);
+            AddPickupPrefab(weaponDef, prefabReplacementName);
+        }
+
+        private static void AddPickupPrefab(HunkWeaponDef weaponDef, string prefabReplacementName)
+        {
+            var weaponPrefab = LoadAsset<GameObject>(prefabReplacementName + "Pickup.prefab");
+            if (!weaponPrefab)
+            {
+                Log.ErrorAsset(prefabReplacementName);
+                return;
+            }
+
+            PickupPrefabFix.AddPair(weaponDef, weaponPrefab);
         }
 
         public static T LoadAsset<T>(string path) where T : UnityEngine.Object

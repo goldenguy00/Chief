@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Reflection;
-using System.Text;
-using BepInEx.Logging;
-using MonoMod.RuntimeDetour.HookGen;
-using UnityEngine.AddressableAssets;
 using UnityEngine.Rendering;
 using UnityEngine;
 using RoR2;
@@ -20,6 +13,7 @@ namespace ChiefMod
         internal static string skinName = "Master Chief";
         internal static string skinNameToken = "LONK_SKIN_CHIEF_NAME";
 
+        internal static event Action<SkinDef> OnChiefSkinLoaded;
         public static void Init()
         {
             BodyCatalog.availability.CallWhenAvailable(AddRobHunkBodyChiefSkin);
@@ -125,42 +119,8 @@ namespace ChiefMod
             Array.Resize(ref modelSkinController.skins, modelSkinController.skins.Length + 1);
             modelSkinController.skins[^1] = skin;
             BodyCatalog.skins[(int)BodyCatalog.FindBodyIndex(bodyObject)] = modelSkinController.skins;
-        }
 
-        public static void ConvertAllRenderersToHopooShader(GameObject objectToConvert, bool onlyMeshes = true)
-        {
-            foreach (Renderer renderer in objectToConvert.GetComponentsInChildren<Renderer>())
-            {
-                if (!renderer || !renderer.material)
-                {
-                    continue;
-                }
-
-                if (onlyMeshes)
-                {
-                    if (!renderer.GetComponent<LineRenderer>() && !renderer.GetComponent<TrailRenderer>() && !renderer.GetComponent<ParticleSystemRenderer>())
-                    {
-                        ConvertAllRenderersToHopooShader(renderer);
-                    }
-                }
-                else
-                {
-                    ConvertAllRenderersToHopooShader(renderer);
-                }
-            }
-        }
-
-        public static void ConvertAllRenderersToHopooShader(Renderer renderer)
-        {
-            Material[] materials = renderer.materials;
-            foreach (var material in materials)
-            {
-                if (material)
-                {
-                    Log.Warning("Converting material " + material.name);
-                    HunkAssets.ConvertMaterial(material);
-                }
-            }
+            OnChiefSkinLoaded?.Invoke(skin);
         }
     }
 }
