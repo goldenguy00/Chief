@@ -1,5 +1,5 @@
 using BepInEx;
-using ChiefMod.Modules;
+using BepInEx.Configuration;
 using HarmonyLib;
 using HunkMod.Modules.Components;
 using HunkMod.Modules.Weapons;
@@ -18,12 +18,15 @@ namespace ChiefMod
 
         public static ChiefPlugin Instance { get; private set; }
         internal static Harmony Harm;
+        internal static ConfigEntry<bool> UseGlobalSkins { get; private set; }
 
         public void Awake()
         {
             Instance = this;
             Harm = new Harmony(PluginGUID);
             Harm.CreateClassProcessor(typeof(PickupPrefabFix)).Patch();
+
+            UseGlobalSkins = Config.Bind("General", "Use Global Weapon Skins", false, "If disabled, only Hunk's Chief skin will use Halo's weapon reskins");
 
             Log.Init(Logger);
             ChiefSkin.Init();

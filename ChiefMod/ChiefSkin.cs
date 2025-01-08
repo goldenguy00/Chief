@@ -120,7 +120,7 @@ namespace ChiefMod
             modelSkinController.skins[^1] = skin;
             BodyCatalog.skins[(int)BodyCatalog.FindBodyIndex(bodyObject)] = modelSkinController.skins;
 
-            OnChiefSkinLoaded?.Invoke(skin);
+            OnChiefSkinLoaded?.Invoke(ChiefPlugin.UseGlobalSkins.Value ? null : skin);
         }
     }
 }

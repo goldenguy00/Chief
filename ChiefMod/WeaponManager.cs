@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using ChiefMod.Modules;
 using HunkMod.Modules.Survivors;
 using RoR2;
 using UnityEngine;
@@ -92,6 +91,22 @@ namespace ChiefMod
             {
                 Log.ErrorAsset(prefabReplacementName);
                 return;
+            }
+            
+            if (!weaponPrefab.TryGetComponent<ModelPanelParameters>(out var mdlParams))
+                mdlParams = weaponPrefab.AddComponent<ModelPanelParameters>();
+
+            var parent = weaponPrefab.transform;
+            if (!mdlParams.focusPointTransform)
+            {
+                mdlParams.focusPointTransform = parent.Find("FocusPoint") ?? new GameObject("FocusPoint").transform;
+                mdlParams.focusPointTransform.SetParent(parent);
+            }
+
+            if (!mdlParams.cameraPositionTransform)
+            {
+                mdlParams.cameraPositionTransform = parent.Find("CameraPosition") ?? new GameObject("CameraPosition").transform;
+                mdlParams.cameraPositionTransform.SetParent(weaponPrefab.transform);
             }
 
             PickupPrefabFix.AddPair(weaponDef, weaponPrefab);
