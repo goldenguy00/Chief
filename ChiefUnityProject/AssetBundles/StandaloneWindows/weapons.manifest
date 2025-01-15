@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 345483560
+CRC: 1671328421
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 4ee8ec0286651f427eee360ae845e9bd
+    Hash: 32c16ac2284becf4ab9fb9764ec56b9e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 533067e4812aea021709a65abdf35592
@@ -63,6 +63,7 @@ Assets:
 - Assets/Chief/Weapons/mdlMUPHalo.prefab
 - Assets/Chief/Weapons/mdlAssaultRifleHalo.prefab
 - Assets/Chief/Weapons/Meshes/DotSight/meshPanel2.mesh
+- Assets/Chief/Weapons/Meshes/meshMagazine.mesh
 - Assets/Chief/Weapons/Textures/texPistolBase2.png
 - Assets/Chief/Weapons/Meshes/DotSight/meshBolt2.mesh
 - Assets/Chief/Weapons/Meshes/DotSight/meshBody2.mesh
@@ -77,8 +78,9 @@ Assets:
 - Assets/Chief/Weapons/Meshes/DotSight/meshSpiral.mesh
 - Assets/Chief/Weapons/Materials/matExtendedMag.mat
 - Assets/Chief/Weapons/Materials/matRifleBase.mat
-- Assets/Chief/Weapons/Meshes/DotSight/meshSelectorTop.mesh
+- Assets/Chief/Weapons/Icons/UNSC SMG.psd
 - Assets/Chief/Weapons/Materials/matGray.mat
+- Assets/Chief/Weapons/Meshes/DotSight/meshSelectorTop.mesh
 - Assets/Chief/Weapons/Textures/texPistolBase2_N.png
 - Assets/Chief/Weapons/Meshes/meshModerator.mesh
 - Assets/Chief/Weapons/Meshes/DotSight/meshFixator.mesh
