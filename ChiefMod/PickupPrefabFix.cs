@@ -18,7 +18,7 @@ namespace ChiefMod
             prefabsByWeaponIndex[weaponDef.index] = (weaponDef.itemDef.pickupModelPrefab, newPrefab);
         }
 
-        [HarmonyPatch(typeof(HunkController), nameof(HunkController.Start))]
+        [HarmonyPatch(typeof(HunkController), "Start")]
         [HarmonyPostfix]
         public static void ReplacePickupModel(HunkController __instance)
         {
@@ -28,12 +28,12 @@ namespace ChiefMod
             if (!__instance.characterBody.isPlayerControlled || !__instance.characterBody.hasEffectiveAuthority)
                 return;
 
-            var currentSkinDef = __instance.modelSkinController.skins[__instance.characterBody.skinIndex];
+            var currentSkinDef = HG.ArrayUtils.GetSafe(__instance.modelSkinController.skins, __instance.modelSkinController.currentSkinIndex);
             foreach (var gunSkin in Hunk.gunSkins)
             {
                 if (prefabsByWeaponIndex.TryGetValue(gunSkin.weaponDef.index, out var weaponPair))
                 {
-                    var prefab = !gunSkin.skinDef || gunSkin.skinDef == currentSkinDef ? weaponPair.newPrefab : weaponPair.oldPrefab;
+                    var prefab = (!gunSkin.skinDef || gunSkin.skinDef == currentSkinDef) ? weaponPair.newPrefab : weaponPair.oldPrefab;
                     gunSkin.weaponDef.itemDef.pickupModelPrefab = prefab;
 
                     var pickupDef = PickupCatalog.GetPickupDef(PickupCatalog.FindPickupIndex(gunSkin.weaponDef.itemDef.itemIndex));

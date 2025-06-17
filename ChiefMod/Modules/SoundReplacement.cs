@@ -6,8 +6,8 @@ namespace ChiefMod.Modules
     [HarmonyPatch(typeof(HunkDialogue))]
     internal class Sound_replacement
     {
-        [HarmonyPatch(nameof(HunkDialogue.Step1))]
-        [HarmonyPrefix]
+        //[HarmonyPatch(nameof(HunkDialogue.Step1))]
+        //[HarmonyPrefix]
 
         public static bool Replacestep1()
         {

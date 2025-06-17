@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Linq;
-using UnityEngine.Rendering;
 using UnityEngine;
 using RoR2;
-using HunkMod.Modules;
 using HunkMod.Modules.Survivors;
 
 namespace ChiefMod
@@ -58,67 +56,24 @@ namespace ChiefMod
             }
 
             Renderer[] renderers = characterModel.baseRendererInfos.Select(info => info.renderer).ToArray();
+            var skinParams = ScriptableObject.CreateInstance<SkinDefParams>();
+            var skin = ScriptableObject.CreateInstance<SkinDef>();
+            skin.name = skinNameToken;
+            skin.nameToken = skinNameToken;
+            skin.skinDefParams = skinParams;
+            skin.rootObject = modelObject;
+            skin.icon = WeaponManager.LoadAsset<Sprite>("Assets/Chief/Skin/Icons/ChiefIcon.png");
+            skin.baseSkins = [];
 
-            var skin = Skins.CreateSkinDef(skinNameToken, WeaponManager.LoadAsset<Sprite>("Assets/Chief/Skin/Icons/ChiefIcon.png"),
-            [
-                new CharacterModel.RendererInfo
-                {
-                    defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Bodu.mat"),
-                    defaultShadowCastingMode = ShadowCastingMode.On,
-                    ignoreOverlays = false,
-                    renderer = renderers[0]
-                },
-                new CharacterModel.RendererInfo
-                {
-                    defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Head.mat"),
-                    defaultShadowCastingMode = ShadowCastingMode.On,
-                    ignoreOverlays = false,
-                    renderer = renderers[1]
-                }
-            ], characterModel.mainSkinnedMeshRenderer, modelObject);
+            skinParams.rendererInfos = HG.ArrayUtils.Clone(characterModel.baseRendererInfos);
+            skinParams.rendererInfos[0].defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Bodu.mat");
+            skinParams.rendererInfos[1].defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Head.mat");
 
-            skin.meshReplacements =
-            [
-                new SkinDef.MeshReplacement
-                    {
-                        mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/body.asset"),
-                        renderer = renderers[0]
-                    },
-                    new SkinDef.MeshReplacement
-                    {
-                        mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/head.asset"),
-                        renderer = renderers[1]
-                    },
-                    new SkinDef.MeshReplacement
-                    {
-                        mesh = null,
-                        renderer = renderers[2]
-                    },
-                    new SkinDef.MeshReplacement
-                    {
-                        mesh = null,
-                        renderer = renderers[3]
-                    },
-                    new SkinDef.MeshReplacement
-                    {
-                        mesh = null,
-                        renderer = renderers[4]
-                    },
-                    new SkinDef.MeshReplacement
-                    {
-                        mesh = null,
-                        renderer = renderers[5]
-                    },
-                    new SkinDef.MeshReplacement
-                    {
-                        mesh = null,
-                        renderer = renderers[6]
-                    }
-            ];
+            skinParams.meshReplacements = renderers.Select(r => new SkinDefParams.MeshReplacement { mesh = null, renderer = r }).ToArray();
+            skinParams.meshReplacements[0].mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/body.asset");
+            skinParams.meshReplacements[1].mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/head.asset");
 
-            Array.Resize(ref modelSkinController.skins, modelSkinController.skins.Length + 1);
-            modelSkinController.skins[^1] = skin;
-            BodyCatalog.skins[(int)BodyCatalog.FindBodyIndex(bodyObject)] = modelSkinController.skins;
+            HG.ArrayUtils.ArrayAppend(ref modelSkinController.skins, skin);
 
             OnChiefSkinLoaded?.Invoke(ChiefPlugin.UseGlobalSkins.Value ? null : skin);
         }

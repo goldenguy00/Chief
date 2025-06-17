@@ -32,7 +32,7 @@ namespace ChiefMod
 
             // Play sound here!
             // You can right click the method name of HunkController.StartBGM and select Peek/Goto Definition to see what the original method does.
-            __instance.bgmPlayID = Util.PlaySound("Halo_Sound_String", __instance.gameObject);
+            //__instance.bgmPlayID = Util.PlaySound("Halo_Sound_String", __instance.gameObject);
 
             // true = run original method after
             // false = do not run original method

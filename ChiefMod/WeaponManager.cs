@@ -20,11 +20,13 @@ namespace ChiefMod
 
         internal static void Init()
         {
-            var bundleFiles = Directory.EnumerateFiles(System.IO.Path.GetDirectoryName(ChiefPlugin.Instance.Info.Location), "*", SearchOption.AllDirectories).Where(p => !System.IO.Path.HasExtension(p));
-            var bundleCount = bundleFiles.Count();
+            var directoryName = System.IO.Path.GetDirectoryName(ChiefPlugin.Instance.Info.Location);
+            var bundleFiles = Directory.EnumerateFiles(directoryName, "*", SearchOption.AllDirectories).Where(p => !System.IO.Path.HasExtension(p));
 
+            var bundleCount = 0;
             foreach (var bundleName in bundleFiles)
             {
+                bundleCount++;
                 AssetBundle.LoadFromFileAsync(bundleName).completed += o =>
                 {
                     var bundle = (o as AssetBundleCreateRequest).assetBundle;
@@ -45,6 +47,25 @@ namespace ChiefMod
                     }
                 };
             }
+        }
+
+        public static T LoadAsset<T>(string path) where T : UnityEngine.Object
+        {
+            foreach (var kvp in loadedBundleAssetNames)
+            {
+                if (kvp.Value.Contains(path.ToLower()))
+                {
+                    return loadedBundles[kvp.Key].LoadAsset<T>(path);
+                }
+            }
+
+            Log.ErrorAsset(path);
+
+            Log.Warning("Current asset paths");
+            foreach (var name in loadedBundleAssetNames.SelectMany(kvp => kvp.Value))
+                Log.Error(name);
+
+            return null;
         }
 
         public static void AddWeapon<T>(HunkWeaponDef weaponDef, string prefabReplacementName, SkinDef chiefSkin = null) where T : MonoBehaviour
@@ -110,25 +131,6 @@ namespace ChiefMod
             }
 
             PickupPrefabFix.AddPair(weaponDef, weaponPrefab);
-        }
-
-        public static T LoadAsset<T>(string path) where T : UnityEngine.Object
-        {
-            foreach (var kvp in loadedBundleAssetNames)
-            {
-                if (kvp.Value.Contains(path.ToLower()))
-                {
-                    return loadedBundles[kvp.Key].LoadAsset<T>(path);
-                }
-            }
-
-            Log.ErrorAsset(path);
-
-            Log.Warning("Current asset paths");
-            foreach (var name in loadedBundleAssetNames.SelectMany(kvp => kvp.Value))
-                Log.Error(name);
-
-            return null;
         }
     }
 }

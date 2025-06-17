@@ -1,3 +1,7 @@
+# 1.1.0
+
+- Updated to new SkinDefParams system
+
 # 1.0.5
 
 - Hunk update
