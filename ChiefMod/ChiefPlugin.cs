@@ -14,7 +14,7 @@ namespace ChiefMod
         public const string PluginGUID = "com." + PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "LONK";
         public const string PluginName = "ChiefMod";
-        public const string PluginVersion = "1.1.0";
+        public const string PluginVersion = "1.2.0";
 
         public static ChiefPlugin Instance { get; private set; }
         internal static Harmony Harm;
@@ -32,23 +32,14 @@ namespace ChiefMod
             ChiefSkin.Init();
             WeaponManager.Init();
             ChiefSkin.OnChiefSkinLoaded += AddWeapons;
-
-            ApplySoundReplacements();
         }
         
         public static void AddWeapons(SkinDef chiefSkin)
         {
-            //new PlasmaRifle().Init();
-
             WeaponManager.AddWeapon<SMGBehavior>(SMG.instance.weaponDef, "mdlSMGHalo", chiefSkin);
             WeaponManager.AddWeapon<MUPBehavior>(MUP.instance.weaponDef, "mdlMUPHalo", chiefSkin);
             WeaponManager.AddWeapon<ARBehavior>(AssaultRifle.instance.weaponDef, "mdlAssaultRifleHalo", chiefSkin);
             WeaponManager.AddWeapon(Shotgun.instance.weaponDef, "mdlShotgunHalo", chiefSkin);
-        }
-
-        private void ApplySoundReplacements()
-        {
-            //Harm.CreateClassProcessor(typeof(EscapeSequence)).Patch();
         }
     }
 }

@@ -55,23 +55,29 @@ namespace ChiefMod
                 return;
             }
 
-            Renderer[] renderers = characterModel.baseRendererInfos.Select(info => info.renderer).ToArray();
-            var skinParams = ScriptableObject.CreateInstance<SkinDefParams>();
-            var skin = ScriptableObject.CreateInstance<SkinDef>();
-            skin.name = skinNameToken;
-            skin.nameToken = skinNameToken;
-            skin.skinDefParams = skinParams;
-            skin.rootObject = modelObject;
-            skin.icon = WeaponManager.LoadAsset<Sprite>("Assets/Chief/Skin/Icons/ChiefIcon.png");
-            skin.baseSkins = [];
+            var rendererInfos = HG.ArrayUtils.Clone(characterModel.baseRendererInfos);
+            rendererInfos[0].defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Bodu.mat");
+            rendererInfos[1].defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Head.mat");
 
-            skinParams.rendererInfos = HG.ArrayUtils.Clone(characterModel.baseRendererInfos);
-            skinParams.rendererInfos[0].defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Bodu.mat");
-            skinParams.rendererInfos[1].defaultMaterial = WeaponManager.LoadAsset<Material>("Assets/Chief/Skin/Materials/Head.mat");
+            var meshReplacements = characterModel.baseRendererInfos.Select(info => new SkinDefParams.MeshReplacement { mesh = null, renderer = info.renderer }).ToArray();
+            meshReplacements[0].mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/body.asset");
+            meshReplacements[1].mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/head.asset");
 
-            skinParams.meshReplacements = renderers.Select(r => new SkinDefParams.MeshReplacement { mesh = null, renderer = r }).ToArray();
-            skinParams.meshReplacements[0].mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/body.asset");
-            skinParams.meshReplacements[1].mesh = WeaponManager.LoadAsset<Mesh>("Assets/Chief/Skin/Meshes/head.asset");
+            var skin = R2API.Skins.CreateNewSkinDef(new R2API.SkinDefParamsInfo
+            {
+                Name = skinNameToken,
+                NameToken = skinNameToken,
+                SkinDefParams = null,
+                RootObject = modelObject,
+                Icon = WeaponManager.LoadAsset<Sprite>("Assets/Chief/Skin/Icons/ChiefIcon.png"),
+                BaseSkins = [],
+                UnlockableDef = null,
+                MinionSkinReplacements = [],
+                GameObjectActivations = [],
+                ProjectileGhostReplacements = [],
+                MeshReplacements = meshReplacements,
+                RendererInfos = rendererInfos
+            });
 
             HG.ArrayUtils.ArrayAppend(ref modelSkinController.skins, skin);
 
